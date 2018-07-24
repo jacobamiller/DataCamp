@@ -1,0 +1,47 @@
+1 Data ingestion & inspection
+In this chapter, you will be introduced to Panda's DataFrames. You will use Pandas to import and inspect a variety of datasets, ranging from population data obtained from The World Bank to monthly stock data obtained via Yahoo! Finance. You will also practice building DataFrames from scratch, and become familiar with Pandas' intrinsic data visualization capabilities.
+
+Icon exercise video
+Review of pandas DataFrames
+50 xp
+Icon exercise mc
+Inspecting your data
+50 xp
+Icon exercise mc
+DataFrame data types
+50 xp
+Icon exercise interactive
+NumPy and pandas working together
+100 xp
+Icon exercise video
+Building DataFrames from scratch
+50 xp
+Icon exercise interactive
+Zip lists to build a DataFrame
+100 xp
+Icon exercise interactive
+Labeling your data
+100 xp
+Icon exercise interactive
+Building DataFrames with broadcasting
+100 xp
+Icon exercise video
+Importing & exporting data
+50 xp
+Icon exercise interactive
+Reading a flat file
+100 xp
+Icon exercise interactive
+Delimiters, headers, and extensions
+100 xp
+Icon exercise video
+Plotting with pandas
+50 xp
+Icon exercise interactive
+Plotting series using pandas
+100 xp
+Icon exercise interactive
+Plotting DataFrames
+100 xp
+HIDE CHAPTER DETAILS
+
