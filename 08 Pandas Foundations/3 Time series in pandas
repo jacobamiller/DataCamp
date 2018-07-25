@@ -1,0 +1,70 @@
+3 Time series in pandas
+In this chapter, you will learn how to manipulate and visualize time series data using Pandas. You will become familiar with concepts such as upsampling, downsampling, and interpolation. You will practice using Pandas' method chaining to efficiently filter your data and perform time series analyses. From stock prices to flight timings, time series data are found in a wide variety of domains and being able to effectively work with such data can be an invaluable skill.
+
+Indexing pandas time series
+50 XP
+Reading and slicing times
+50 XP
+Creating and using a DatetimeIndex
+50 XP
+Partial string indexing and slicing
+100 XP
+Reindexing the Index
+100 XP
+Resampling pandas time series
+50 XP
+Resampling and frequency
+100 XP
+Separating and resampling
+100 XP
+Rolling mean and frequency
+100 XP
+Resample and roll with it
+100 XP
+Manipulating pandas time series
+50 XP
+Method chaining and filtering
+100 XP
+Missing values and interpolation
+100 XP
+Time zones and conversion
+100 XP
+Visualizing pandas time series
+50 XP
+Plotting time series, datetime indexing
+100 XP
+Plotting date ranges, partial indexing
+100 XP
+Hide Details
+
+EXERCISE
+Reading and slicing times
+For this exercise, we have read in the same data file using three different approaches:
+
+df1 = pd.read_csv(filename)
+
+df2 = pd.read_csv(filename, parse_dates=['Date'])
+
+df3 = pd.read_csv(filename, index_col='Date', parse_dates=True)
+
+Use the .head() and .info() methods in the IPython Shell to inspect the DataFrames. Then, try to index each DataFrame with a datetime string. Which of the resulting DataFrames allows you to easily index and slice data by dates using, for example, df1.loc['2010-Aug-01']?
+
+INSTRUCTIONS
+50 XP
+Possible Answers
+df1.
+press 1
+df1 and df2.
+press 2
+df2.
+press 3
+df2 and df3.
+press 4
+df3.
+press 5
+
+Submit Answer
+Take Hint (-15 XP)
+
+Answer #5  - df3.head()
+
