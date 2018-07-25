@@ -1,0 +1,36 @@
+4 Case Study - Sunlight in Austin
+Working with real-world weather and climate data, in this chapter you will bring together and apply all of the skills you have acquired in this course. You will use Pandas to manipulate the data into a form usable for analysis, and then systematically explore it using the techniques you learned in the prior chapters. Enjoy!
+
+Reading and cleaning the data
+50 XP
+What method should we use to read the data?
+50 XP
+Reading in a data file
+100 XP
+Re-assigning column names
+100 XP
+Cleaning and tidying datetime data
+100 XP
+Cleaning the numeric columns
+100 XP
+Statistical exploratory data analysis
+50 XP
+Signal min, max, median
+100 XP
+Signal variance
+100 XP
+Sunny or cloudy
+100 XP
+Visual exploratory data analysis
+50 XP
+Weekly average temperature and visibility
+100 XP
+Daily hours of clear sky
+100 XP
+Heat or humidity
+100 XP
+Probability of high temperatures
+100 XP
+Congratulations!
+50 XP
+Hide Details
