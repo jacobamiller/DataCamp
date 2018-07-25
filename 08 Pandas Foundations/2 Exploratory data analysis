@@ -1,0 +1,37 @@
+2 Exploratory data analysis
+Having learned how to ingest and inspect your data, you will next explore it visually as well as quantitatively. This process, known as exploratory data analysis (EDA), is a crucial component of any data science project. Pandas has powerful methods that help with statistical and visual EDA. In this chapter, you will learn how and when to apply these techniques.
+
+Visual exploratory data analysis
+50 XP
+pandas line plots
+100 XP
+pandas scatter plots
+100 XP
+pandas box plots
+100 XP
+pandas hist, pdf and cdf
+100 XP
+Statistical exploratory data analysis
+50 XP
+Fuel efficiency
+50 XP
+Bachelor's degrees awarded to women
+100 XP
+Median vs mean
+100 XP
+Quantiles
+100 XP
+Standard deviation of temperature
+100 XP
+Separating populations with Boolean indexing
+50 XP
+Filtering and counting
+50 XP
+Separate and summarize
+100 XP
+Separate and plot
+100 XP
+Hide Details
+
+
+
