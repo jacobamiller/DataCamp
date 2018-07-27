@@ -168,4 +168,3 @@ p_counties_rev = election.loc['Potter':'Perry':-1]
 
 
 
-
