@@ -1,0 +1,52 @@
+1 Extracting and transforming data
+In this chapter, you will learn all about how to index, slice, filter, and transform DataFrames, using a variety of datasets, ranging from 2012 US election data for the state of Pennsylvania to Pittsburgh weather data.
+
+Icon exercise video
+Indexing DataFrames
+50 xp
+Icon exercise mc
+Index ordering
+50 xp
+Icon exercise interactive
+Positional and labeled indexing
+100 xp
+Icon exercise interactive
+Indexing and column rearrangement
+100 xp
+Icon exercise video
+Slicing DataFrames
+50 xp
+Icon exercise interactive
+Slicing rows
+100 xp
+Icon exercise interactive
+Slicing columns
+100 xp
+Icon exercise interactive
+Subselecting DataFrames with lists
+100 xp
+Icon exercise video
+Filtering DataFrames
+50 xp
+Icon exercise interactive
+Thresholding data
+100 xp
+Icon exercise interactive
+Filtering columns using other columns
+100 xp
+Icon exercise interactive
+Filtering using NaNs
+100 xp
+Icon exercise video
+Transforming DataFrames
+50 xp
+Icon exercise interactive
+Using apply() to transform a column
+100 xp
+Icon exercise interactive
+Using .map() with a dictionary
+100 xp
+Icon exercise interactive
+Using vectorized functions
+100 xp
+HIDE CHAPTER DETAILS
