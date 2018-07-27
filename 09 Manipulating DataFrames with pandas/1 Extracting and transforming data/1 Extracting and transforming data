@@ -50,3 +50,122 @@ Icon exercise interactive
 Using vectorized functions
 100 xp
 HIDE CHAPTER DETAILS
+
+
+
+EXERCISE
+EXERCISE
+Index ordering
+In this exercise, the DataFrame election is provided for you. It contains the 2012 US election results for the state of Pennsylvania with county names as row indices. Your job is to select 'Bedford' county and the'winner' column. Which method is the preferred way?
+
+Feel free to explore the DataFrame in the IPython Shell.
+
+INSTRUCTIONS
+50 XP
+Possible Answers
+election['Bedford', 'winner']
+press 1
+election['Bedford']['winner']
+press 2
+election['eggs']['Bedford']
+press 3
+election.loc['Bedford', 'winner']
+press 4
+election.iloc['Bedford', 'winner']
+press 5
+
+Submit Answer
+Take Hint (-15 XP)
+
+Answer #4 - election.loc['Bedford', 'winner']
+
+EXERCISE
+Positional and labeled indexing
+Given a pair of label-based indices, sometimes it's necessary to find the corresponding positions. In this exercise, you will use the Pennsylvania election results again. The DataFrame is provided for you as election.
+
+Find x and y such that election.iloc[x, y] == election.loc['Bedford', 'winner']. That is, what is the row position of 'Bedford', and the column position of 'winner'? Remember that the first position in Python is 0, not 1!
+
+To answer this question, first explore the DataFrame using election.head() in the IPython Shell and inspect it with your eyes.
+
+INSTRUCTIONS
+100 XP
+Explore the DataFrame in the IPython Shell using election.head().
+Assign the row position of election.loc['Bedford'] to x.
+Assign the column position of election['winner'] to y.
+Hit 'Submit Answer' to print the boolean equivalence of the .loc and .iloc selections.
+Take Hint (-30 XP)
+
+# Assign the row position of election.loc['Bedford']: x
+x = 4
+
+# Assign the column position of election['winner']: y
+y = 4
+
+# Print the boolean equivalence
+print(election.iloc[x, y] == election.loc['Bedford', 'winner'])
+
+EXERCISE
+Indexing and column rearrangement
+There are circumstances in which it's useful to modify the order of your DataFrame columns. We do that now by extracting just two columns from the Pennsylvania election results DataFrame.
+
+Your job is to read the CSV file and set the index to 'county'. You'll then assign a new DataFrame by selecting the list of columns ['winner', 'total', 'voters']. The CSV file is provided to you in the variable filename.
+
+INSTRUCTIONS
+100 XP
+Import pandas as pd.
+Read in filename using pd.read_csv() and set the index to 'county' by specifying the index_col parameter.
+Create a separate DataFrame results with the columns ['winner', 'total', 'voters'].
+Print the output using results.head(). This has been done for you, so hit 'Submit Answer' to see the new DataFrame!
+Take Hint (-30 XP)
+
+# Import pandas
+import pandas as pd
+
+# Read in filename and set the index: election
+election = pd.read_csv(filename, index_col='county')
+
+# Create a separate dataframe with the columns ['winner', 'total', 'voters']: results
+results = election[['winner', 'total', 'voters']]
+
+# Print the output of results.head()
+print(results.head())
+
+EXERCISE
+Slicing rows
+The Pennsylvania US election results data set that you have been using so far is ordered by county name. This means that county names can be sliced alphabetically. In this exercise, you're going to perform slicing on the county names of the election DataFrame from the previous exercises, which has been pre-loaded for you.
+
+INSTRUCTIONS
+100 XP
+Slice the row labels 'Perry' to 'Potter' and assign the output to p_counties.
+Print the p_counties DataFrame. This has been done for you.
+Slice the row labels 'Potter' to 'Perry' in reverse order. To do this for hypothetical row labels 'a' and 'b', you could use a stepsize of -1 like so: df.loc['b':'a':-1].
+Print the p_counties_rev DataFrame. This has also been done for you, so hit 'Submit Answer' to see the result of your slicing!
+Take Hint (-30 XP)
+
+# Slice the row labels 'Perry' to 'Potter': p_counties
+p_counties = election.loc['Perry':'Potter',:]
+
+# Print the p_counties DataFrame
+print(p_counties)
+
+# Slice the row labels 'Potter' to 'Perry' in reverse order: p_counties_rev
+p_counties_rev = election.loc['Potter':'Perry':-1]
+
+# Print the p_counties_rev DataFrame
+print(p_counties_rev)
+
+
+# Slice the row labels 'Perry' to 'Potter': p_counties
+p_counties = election.loc['Perry':'Potter',:]
+
+
+# Slice the row labels 'Potter' to 'Perry' in reverse order: p_counties_rev
+p_counties_rev = election.loc['Potter':'Perry':-1]
+
+
+
+
+
+
+
+
