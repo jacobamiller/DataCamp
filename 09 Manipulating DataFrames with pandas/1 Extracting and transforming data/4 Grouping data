@@ -1,0 +1,47 @@
+4 Grouping data
+In this chapter, you'll learn how to identify and split DataFrames by groups or categories for further aggregation or analysis. You'll also learn how to transform and filter your data, including how to detect outliers and impute missing values. Knowing how to effectively group data in pandas can be a seriously powerful addition to your data science toolbox.
+
+Categoricals and groupby
+50 XP
+Advantages of categorical data types
+50 XP
+Grouping by multiple columns
+100 XP
+Grouping by another series
+100 XP
+Groupby and aggregation
+50 XP
+Computing multiple aggregates of multiple columns
+100 XP
+Aggregating on index levels/fields
+100 XP
+Grouping on a function of the index
+100 XP
+Groupby and transformation
+50 XP
+Detecting outliers with Z-Scores
+100 XP
+Filling missing data (imputation) by group
+100 XP
+Other transformations with .apply
+100 XP
+Groupby and filtering
+50 XP
+Grouping and filtering with .apply()
+100 XP
+Grouping and filtering with .filter()
+100 XP
+Filtering and grouping with .map()
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
