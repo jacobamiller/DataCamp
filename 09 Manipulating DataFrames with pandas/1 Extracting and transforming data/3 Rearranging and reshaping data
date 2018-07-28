@@ -1,0 +1,36 @@
+3 Rearranging and reshaping data
+Here, you will learn how to reshape your DataFrames using techniques such as pivoting, melting, stacking, and unstacking. These are powerful techniques that allow you to tidy and rearrange your data into the format that allows you to most easily analyze it for insights.
+
+Pivoting DataFrames
+50 XP
+Pivoting and the index
+50 XP
+Pivoting a single variable
+100 XP
+Pivoting all variables
+100 XP
+Stacking & unstacking DataFrames
+50 XP
+Stacking & unstacking I
+100 XP
+Stacking & unstacking II
+100 XP
+Restoring the index order
+100 XP
+Melting DataFrames
+50 XP
+Adding names for readability
+100 XP
+Going from wide to long
+100 XP
+Obtaining key-value pairs with melt()
+100 XP
+Pivot tables
+50 XP
+Setting up a pivot table
+100 XP
+Using other aggregations in pivot tables
+100 XP
+Using margins in pivot tables
+100 XP
+Hide Details
