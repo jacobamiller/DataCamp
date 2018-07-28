@@ -1,0 +1,48 @@
+5 Bringing it all together
+Here, you will bring together everything you have learned in this course while working with data recorded from the Summer Olympic games that goes as far back as 1896! This is a rich dataset that will allow you to fully apply the data manipulation techniques you have learned. You will pivot, unstack, group, slice, and reshape your data as you explore this dataset and uncover some truly fascinating insights. Enjoy!
+
+Case Study - Summer Olympics
+50 XP
+Grouping and aggregating
+50 XP
+Using .value_counts() for ranking
+100 XP
+Using .pivot_table() to count medals by type
+100 XP
+Understanding the column labels
+50 XP
+Applying .drop_duplicates()
+100 XP
+Finding possible errors with .groupby()
+100 XP
+Locating suspicious data
+100 XP
+Constructing alternative country rankings
+50 XP
+Using .nunique() to rank by distinct sports
+100 XP
+Counting USA vs. USSR Cold War Olympic Sports
+100 XP
+Counting USA vs. USSR Cold War Olympic Medals
+100 XP
+Reshaping DataFrames for visualization
+50 XP
+Visualizing USA Medal Counts by Edition: Line Plot
+100 XP
+Visualizing USA Medal Counts by Edition: Area Plot
+100 XP
+Visualizing USA Medal Counts by Edition: Area Plot with Ordered Medals
+100 XP
+Congratulations!
+50 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
