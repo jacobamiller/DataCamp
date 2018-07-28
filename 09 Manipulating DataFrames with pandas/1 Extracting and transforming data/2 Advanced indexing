@@ -1,0 +1,31 @@
+2 Advanced indexing
+Having learned the fundamentals of working with DataFrames, you will now move on to more advanced indexing techniques. You will learn about MultiIndexes, or hierarchical indexes, and learn how to interact with and extract data from them.
+
+Index objects and labeled data
+50 XP
+Index values and names
+50 XP
+Changing index of a DataFrame
+100 XP
+Changing index name labels
+100 XP
+Building an index, then a DataFrame
+100 XP
+Hierarchical indexing
+50 XP
+Extracting data with a MultiIndex
+100 XP
+Setting & sorting a MultiIndex
+100 XP
+Using .loc[] with nonunique indexes
+100 XP
+Indexing multiple levels of a MultiIndex
+100 XP
+Hide Details
+
+
+
+
+
+
+
