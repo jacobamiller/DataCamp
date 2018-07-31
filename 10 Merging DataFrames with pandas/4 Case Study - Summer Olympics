@@ -1,0 +1,56 @@
+4 Case Study - Summer Olympics
+To cement your new skills, you'll apply them by working on an in-depth study involving Olympic medal data. The analysis involves integrating your multi-DataFrame skills from this course and also skills you've gained in previous pandas courses. This is a rich dataset that will allow you to fully leverage your pandas data manipulation skills. Enjoy!
+
+Icon exercise video
+Medals in the Summer Olympics
+50 xp
+Icon exercise interactive
+Loading Olympic edition DataFrame
+100 xp
+Icon exercise interactive
+Loading IOC codes DataFrame
+100 xp
+Icon exercise interactive
+Building medals DataFrame
+100 xp
+Icon exercise video
+Quantifying Performance
+50 xp
+Icon exercise interactive
+Counting medals by country/edition in a pivot table
+100 xp
+Icon exercise interactive
+Computing fraction of medals per Olympic edition
+100 xp
+Icon exercise interactive
+Computing percentage change in fraction of medals won
+100 xp
+Icon exercise video
+Reshaping and plotting
+50 xp
+Icon exercise interactive
+Building hosts DataFrame
+100 xp
+Icon exercise interactive
+Reshaping for analysis
+100 xp
+Icon exercise interactive
+Merging to compute influence
+100 xp
+Icon exercise interactive
+Plotting influence of host country
+100 xp
+Icon exercise video
+Final thoughts
+50 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
