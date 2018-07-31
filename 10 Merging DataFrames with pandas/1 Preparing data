@@ -1,0 +1,46 @@
+1 Preparing data
+In this chapter, you'll learn about different techniques you can use to import multiple files into DataFrames. Having imported your data into individual DataFrames, you'll then learn how to share information between DataFrames using their Indexes. Understanding how Indexes work is essential information that you'll need for merging DataFrames later in the course.
+
+Icon exercise video
+Reading multiple data files
+50 xp
+Icon exercise interactive
+Reading DataFrames from multiple files
+100 xp
+Icon exercise interactive
+Reading DataFrames from multiple files in a loop
+100 xp
+Icon exercise interactive
+Combining DataFrames from multiple data files
+100 xp
+Icon exercise video
+Reindexing DataFrames
+50 xp
+Icon exercise interactive
+Sorting DataFrame with the Index & columns
+100 xp
+Icon exercise interactive
+Reindexing DataFrame from a list
+100 xp
+Icon exercise interactive
+Reindexing using another DataFrame Index
+100 xp
+Icon exercise video
+Arithmetic with Series & DataFrames
+50 xp
+Icon exercise mc
+Adding unaligned DataFrames
+50 xp
+Icon exercise interactive
+Broadcasting in arithmetic formulas
+100 xp
+Icon exercise interactive
+Computing percentage growth of GDP
+100 xp
+Icon exercise interactive
+Converting currency of stocks
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
