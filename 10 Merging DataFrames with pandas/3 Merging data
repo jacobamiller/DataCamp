@@ -1,0 +1,49 @@
+3 Merging data
+Here, you'll learn all about merging pandas DataFrames. You'll explore different techniques for merging, and learn about left joins, right joins, inner joins, and outer joins, as well as when to use which. You'll also learn about ordered merging, which is useful when you want to merge DataFrames whose columns have natural orderings, like date-time columns.
+
+Icon exercise video
+Merging DataFrames
+50 xp
+Icon exercise mc
+Merging company DataFrames
+50 xp
+Icon exercise interactive
+Merging on a specific column
+100 xp
+Icon exercise interactive
+Merging on columns with non-matching labels
+100 xp
+Icon exercise interactive
+Merging on multiple columns
+100 xp
+Icon exercise video
+Joining DataFrames
+50 xp
+Icon exercise mc
+Joining by Index
+50 xp
+Icon exercise mc
+Choosing a joining strategy
+50 xp
+Icon exercise interactive
+Left & right merging on multiple columns
+100 xp
+Icon exercise interactive
+Merging DataFrames with outer join
+100 xp
+Icon exercise video
+Ordered merges
+50 xp
+Icon exercise interactive
+Using merge_ordered()
+100 xp
+Icon exercise interactive
+Using merge_asof()
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
