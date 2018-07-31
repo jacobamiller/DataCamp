@@ -1,0 +1,57 @@
+2 Concatenating data
+Having learned how to import multiple DataFrames and share information using Indexes, in this chapter you'll learn how to perform database-style operations to combine DataFrames. In particular, you'll learn about appending and concatenating DataFrames while working with a variety of real-world datasets.
+
+Icon exercise video
+Appending & concatenating Series
+50 xp
+Icon exercise mc
+Appending Series with nonunique Indices
+50 xp
+Icon exercise interactive
+Appending pandas Series
+100 xp
+Icon exercise interactive
+Concatenating pandas Series along row axis
+100 xp
+Icon exercise video
+Appending & concatenating DataFrames
+50 xp
+Icon exercise interactive
+Appending DataFrames with ignore_index
+100 xp
+Icon exercise interactive
+Concatenating pandas DataFrames along column axis
+100 xp
+Icon exercise interactive
+Reading multiple files to build a DataFrame
+100 xp
+Icon exercise video
+Concatenation, keys, & MultiIndexes
+50 xp
+Icon exercise interactive
+Concatenating vertically to get MultiIndexed rows
+100 xp
+Icon exercise interactive
+Slicing MultiIndexed DataFrames
+100 xp
+Icon exercise interactive
+Concatenating horizontally to get MultiIndexed columns
+100 xp
+Icon exercise interactive
+Concatenating DataFrames from a dict
+100 xp
+Icon exercise video
+Outer & inner joins
+50 xp
+Icon exercise interactive
+Concatenating DataFrames with inner join
+100 xp
+Icon exercise interactive
+Resampling & concatenating DataFrames with inner join
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
