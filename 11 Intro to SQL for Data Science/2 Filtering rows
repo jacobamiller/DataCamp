@@ -1,0 +1,44 @@
+2 Filtering rows
+This chapter builds on the first by teaching you how to filter tables for rows satisfying some criteria of interest. You'll learn how to use basic comparison operators, combine multiple criteria, match patterns in text, and much more.
+
+Icon exercise mc
+Filtering results
+50 xp
+Icon exercise interactive
+Simple filtering of numeric values
+90 xp
+Icon exercise interactive
+Simple filtering of text
+120 xp
+Icon exercise interactive
+WHERE AND
+90 xp
+Icon exercise mc
+WHERE AND OR
+50 xp
+Icon exercise interactive
+WHERE AND OR (2)
+90 xp
+Icon exercise mc
+BETWEEN
+50 xp
+Icon exercise interactive
+BETWEEN (2)
+120 xp
+Icon exercise interactive
+WHERE IN
+90 xp
+Icon exercise mc
+Introduction to NULL and IS NULL
+50 xp
+Icon exercise interactive
+NULL and IS NULL
+90 xp
+Icon exercise interactive
+LIKE and NOT LIKE
+90 xp
+HIDE CHAPTER DETAILS
+
+
+
+
