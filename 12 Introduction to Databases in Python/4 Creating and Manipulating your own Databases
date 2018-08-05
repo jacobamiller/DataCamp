@@ -1,0 +1,71 @@
+4 Creating and Manipulating your own Databases
+In the previous chapters, you interacted with existing databases and queried them in various different ways. Now, you will learn how to build your own databases and keep them updated!
+
+Icon exercise video
+Creating Databases and Tables
+50 xp
+Icon exercise interactive
+Creating Tables with SQLAlchemy
+100 xp
+Icon exercise interactive
+Constraints and Data Defaults
+100 xp
+Icon exercise video
+Inserting Data into a Table
+50 xp
+Icon exercise interactive
+Inserting a single row with an insert() statement
+100 xp
+Icon exercise interactive
+Inserting Multiple Records at Once
+100 xp
+Icon exercise interactive
+Loading a CSV into a Table
+100 xp
+Icon exercise video
+Updating Data in a Database
+50 xp
+Icon exercise interactive
+Updating individual records
+100 xp
+Icon exercise interactive
+Updating Multiple Records
+100 xp
+Icon exercise interactive
+Correlated Updates
+100 xp
+Icon exercise video
+Removing Data From a Database
+50 xp
+Icon exercise interactive
+Deleting all the records from a table
+100 xp
+Icon exercise interactive
+Deleting specific records
+100 xp
+Icon exercise interactive
+Deleting a Table Completely
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
