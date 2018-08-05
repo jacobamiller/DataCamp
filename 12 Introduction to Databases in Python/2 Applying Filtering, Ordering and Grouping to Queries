@@ -1,0 +1,65 @@
+2 Applying Filtering, Ordering and Grouping to Queries
+In this chapter, you will build on the database knowledge you began acquiring in the previous chapter by writing more nuanced queries that allow you to filter, order, and count your data, all within the Pythonic framework provided by SQLAlchemy!
+
+Icon exercise video
+Filtering and Targeting Data
+50 xp
+Icon exercise interactive
+Connecting to a PostgreSQL Database
+50 xp
+Icon exercise interactive
+Filter data selected from a Table - Simple
+100 xp
+Icon exercise interactive
+Filter data selected from a Table - Expressions
+100 xp
+Icon exercise interactive
+Filter data selected from a Table - Advanced
+100 xp
+Icon exercise video
+Overview of Ordering
+50 xp
+Icon exercise interactive
+Ordering by a Single Column
+100 xp
+Icon exercise interactive
+Ordering in Descending Order by a Single Column
+100 xp
+Icon exercise interactive
+Ordering by Multiple Columns
+100 xp
+Icon exercise video
+Counting, Summing and Grouping Data
+50 xp
+Icon exercise interactive
+Counting Distinct Data
+100 xp
+Icon exercise interactive
+Count of Records by State
+100 xp
+Icon exercise interactive
+Determining the Population Sum by State
+100 xp
+Icon exercise video
+Let's use Pandas and Matplotlib to visualize our Data
+50 xp
+Icon exercise interactive
+SQLAlchemy ResultsProxy and Pandas Dataframes
+100 xp
+Icon exercise interactive
+From SQLAlchemy results to a Graph
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
