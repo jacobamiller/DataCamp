@@ -1,0 +1,65 @@
+1 Basics of Relational Databases
+In this chapter, you will become acquainted with the fundamentals of Relational Databases and the Relational Model. You will learn how to connect to a database and then interact with it by writing basic SQL queries, both in raw SQL as well as with SQLAlchemy, which provides a Pythonic way of interacting with databases.
+
+Icon exercise video
+Introduction to Databases
+50 xp
+Icon exercise mc
+Relational Model
+50 xp
+Icon exercise video
+Connecting to your Database
+50 xp
+Icon exercise interactive
+Engines and Connection Strings
+100 xp
+Icon exercise interactive
+Autoloading Tables from a Database
+100 xp
+Icon exercise interactive
+Viewing Table Details
+100 xp
+Icon exercise video
+Introduction to SQL
+50 xp
+Icon exercise interactive
+Selecting data from a Table: raw SQL
+100 xp
+Icon exercise interactive
+Selecting data from a Table with SQLAlchemy
+100 xp
+Icon exercise interactive
+Handling a ResultSet
+100 xp
+Icon exercise video
+Congratulations!
+0 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
