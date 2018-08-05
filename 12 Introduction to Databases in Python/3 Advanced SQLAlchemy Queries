@@ -1,0 +1,58 @@
+3 Advanced SQLAlchemy Queries
+Herein, you will learn to perform advanced - and incredibly useful - queries that will enable you to interact with your data in powerful ways.
+
+Icon exercise video
+Calculating Values in a Query
+50 xp
+Icon exercise interactive
+Connecting to a MySQL Database
+100 xp
+Icon exercise interactive
+Calculating a Difference between Two Columns
+100 xp
+Icon exercise interactive
+Determining the Overall Percentage of Females
+100 xp
+Icon exercise video
+SQL Relationships
+50 xp
+Icon exercise interactive
+Automatic Joins with an Established Relationship
+100 xp
+Icon exercise interactive
+Joins
+100 xp
+Icon exercise interactive
+More Practice with Joins
+100 xp
+Icon exercise video
+Working with Hierarchical Tables
+50 xp
+Icon exercise interactive
+Using alias to handle same table joined queries
+100 xp
+Icon exercise interactive
+Leveraging Functions and Group_bys with Hierarchical Data
+100 xp
+Icon exercise video
+Dealing with Large ResultSets
+50 xp
+Icon exercise interactive
+Working on Blocks of Records
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
