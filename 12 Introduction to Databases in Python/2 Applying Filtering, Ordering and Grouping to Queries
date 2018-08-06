@@ -51,11 +51,113 @@ From SQLAlchemy results to a Graph
 100 xp
 HIDE CHAPTER DETAILS
 
+EXERCISE
+Connecting to a PostgreSQL Database
+In these exercises, you will be working with real databases hosted on the cloud via Amazon Web Services (AWS)!
 
+Let's begin by connecting to a PostgreSQL database. When connecting to a PostgreSQL database, many prefer to use the psycopg2 database driver as it supports practically all of PostgreSQL's features efficiently and is the standard dialect for PostgreSQL in SQLAlchemy.
 
+You might recall from Chapter 1 that we use the create_engine() function and a connection string to connect to a database.
 
+There are three components to the connection string in this exercise: the dialect and driver ('postgresql+psycopg2://'), followed by the username and password ('student:datacamp'), followed by the host and port ('@postgresql.csrrinzqubik.us-east-1.rds.amazonaws.com:5432/'), and finally, the database name ('census'). You will have to pass this string as an argument to create_engine() in order to connect to the database.
 
+INSTRUCTIONS
+50 XP
+Import create_engine from sqlalchemy.
+Create an engine to the census database by concatenating the following strings:
+'postgresql+psycopg2://'
+'student:datacamp'
+'@postgresql.csrrinzqubik.us-east-1.rds.amazonaws.com'
+':5432/census'
+Use the .table_names() method on engine to print the table names.
+Take Hint (-15 XP)
 
+# Import create_engine function
+from sqlalchemy import create_engine
+
+# Create an engine to the census database
+engine = create_engine('postgresql+psycopg2://student:datacamp@postgresql.csrrinzqubik.us-east-1.rds.amazonaws.com:5432/census')
+
+# Use the .table_names() method on the engine to print the table names
+print(engine.table_names())
+
+EXERCISE
+Filter data selected from a Table - Simple
+Having connected to the database, it's now time to practice filtering your queries!
+
+As mentioned in the video, a where() clause is used to filter the data that a statement returns. For example, to select all the records from the census table where the sex is Female (or 'F') we would do the following:
+
+select([census]).where(census.columns.sex == 'F')
+
+In addition to == we can use basically any python comparison operator (such as <=, !=, etc) in the where() clause.
+
+INSTRUCTIONS
+100 XP
+Select all records from the census table by passing in census as a list to select().
+Append a where clause to stmt to return only the records with a state of 'New York'.
+Execute the statement stmt using .execute() and retrieve the results using .fetchall().
+Iterate over results and print the age, sex and pop2008 columns from each record. For example, you can print out the age of result with result.age.
+Take Hint (-30 XP)
+
+EXERCISE
+Filter data selected from a Table - Expressions
+In addition to standard Python comparators, we can also use methods such as in_() to create more powerful where() clauses. You can see a full list of expressions in the SQLAlchemy Documentation.
+
+We've already created a list of some of the most densely populated states.
+
+INSTRUCTIONS
+100 XP
+Select all records from the census table by passing it in as a list to select().
+Append a where clause to return all the records with a state in the states list. Use in_(states) on census.columns.state to do this.
+Loop over the ResultProxy connection.execute(stmt) and print the state and pop2000 columns from each record.
+Take Hint (-30 XP)
+
+# Create a query for the census table: stmt
+stmt = select([census])
+
+# Append a where clause to match all the states in_ the list states
+stmt = stmt.where(census.columns.state.in_(states))
+
+# Loop over the ResultProxy and print the state and its population in 2000
+for result in connection.execute(stmt):
+    print(result.state, result.pop2000)
+
+EXERCISE
+Filter data selected from a Table - Advanced
+You're really getting the hang of this! SQLAlchemy also allows users to use conjunctions such as and_(), or_(), and not_() to build more complex filtering. For example, we can get a set of records for people in New York who are 21 or 37 years old with the following code:
+
+stmt([census]).where(
+  and_(census.columns.state == 'New York',
+       or_(census.columns.age == 21,
+          census.columns.age == 37
+         )
+      )
+  )
+INSTRUCTIONS
+100 XP
+Import and_ from the sqlalchemy module.
+Select all records from the census table.
+Append a where clause to filter all the records whose state is 'California', and whose sex is not 'M'.
+Iterate over the ResultProxy and print the age and sex columns from each record.
+Take Hint (-30 XP)
+
+# Import and_
+from sqlalchemy import and_
+
+# Build a query for the census table: stmt
+stmt = select([census])
+
+# Append a where clause to select only non-male records from California using and_
+stmt = stmt.where(
+    # The state of California with a non-male sex
+    and_(census.columns.state == 'California',
+         census.columns.sex != 'M'
+         )
+        )
+
+# Loop over the ResultProxy printing the age and sex
+for result in connection.execute(stmt):
+    print(result.age, result.sex)
 
 
 
