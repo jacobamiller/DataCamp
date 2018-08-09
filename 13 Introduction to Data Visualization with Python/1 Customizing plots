@@ -1,0 +1,59 @@
+1 Customizing plots
+Following a review of basic plotting with Matplotlib, this chapter delves into customizing plots using Matplotlib. This includes overlaying plots, making subplots, controlling axes, adding legends and annotations, and using different plot styles.
+
+Plotting multiple graphs
+50 XP
+Multiple plots on single axis
+100 XP
+Using axes()
+100 XP
+Using subplot() (1)
+100 XP
+Using subplot() (2)
+100 XP
+Customizing axes
+50 XP
+Using xlim(), ylim()
+100 XP
+Using axis()
+100 XP
+Legends, annotations, and styles
+50 XP
+Using legend()
+100 XP
+Using annotate()
+70 XP
+Modifying styles
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
