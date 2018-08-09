@@ -1,0 +1,61 @@
+3 Statistical plots with Seaborn
+This is a high-level tour of the Seaborn plotting library for producing statistical graphics in Python. The tour covers Seaborn tools for computing and visualizing linear regressions as well as tools for visualizing univariate distributions (e.g., strip, swarm, and violin plots) and multivariate distributions (e.g., joint plots, pair plots, and heatmaps). This also includes a discussion of grouping categories in plots.
+
+Visualizing regressions
+50 XP
+Simple linear regressions
+100 XP
+Plotting residuals of a regression
+100 XP
+Higher-order regressions
+100 XP
+Grouping linear regressions by hue
+100 XP
+Grouping linear regressions by row or column
+100 XP
+Visualizing univariate distributions
+50 XP
+Constructing strip plots
+100 XP
+Constructing swarm plots
+100 XP
+Constructing violin plots
+100 XP
+Visualizing multivariate distributions
+50 XP
+Plotting joint distributions (1)
+100 XP
+Plotting joint distributions (2)
+100 XP
+Plotting distributions pairwise (1)
+100 XP
+Plotting distributions pairwise (2)
+100 XP
+Visualizing correlations with a heatmap
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
