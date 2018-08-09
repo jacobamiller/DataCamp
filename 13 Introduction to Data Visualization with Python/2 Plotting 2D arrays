@@ -1,0 +1,52 @@
+2 Plotting 2D arrays
+This chapter showcases various techniques for visualizing two-dimensional arrays. This includes the use, presentation, and orientation of grids for representing two-variable functions followed by discussions of pseudocolor plots, contour plots, color maps, two-dimensional histograms, and images.
+
+Working with 2D arrays
+50 XP
+Generating meshes
+100 XP
+Array orientation
+50 XP
+Visualizing bivariate functions
+50 XP
+Contour & filled contour plots
+100 XP
+Modifying colormaps
+100 XP
+Visualizing bivariate distributions
+50 XP
+Using hist2d()
+100 XP
+Using hexbin()
+100 XP
+Working with images
+50 XP
+Loading, examining images
+100 XP
+Pseudocolor plot from image data
+100 XP
+Extent and aspect
+100 XP
+Rescaling pixel intensities
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
