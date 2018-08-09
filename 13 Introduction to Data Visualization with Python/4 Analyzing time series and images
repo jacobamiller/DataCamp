@@ -1,0 +1,46 @@
+4 Analyzing time series and images
+This chapter ties together the skills gained so far through examining time series data and images. This involves customizing plots of stock data, generating histograms of image pixel intensities, and enhancing image contrast through histogram equalization.
+
+Visualizing time series
+50 XP
+Multiple time series on common axes
+100 XP
+Multiple time series slices (1)
+100 XP
+Multiple time series slices (2)
+100 XP
+Plotting an inset view
+100 XP
+Time series with moving windows
+50 XP
+Plotting moving averages
+100 XP
+Plotting moving standard deviations
+100 XP
+Interpreting moving statistics
+50 XP
+Histogram equalization in images
+50 XP
+Extracting a histogram from a grayscale image
+100 XP
+Cumulative Distribution Function from an image histogram
+100 XP
+Equalizing an image histogram
+100 XP
+Extracting histograms from a color image
+100 XP
+Extracting bivariate histograms from a color image
+100 XP
+Congratulations!!
+50 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
