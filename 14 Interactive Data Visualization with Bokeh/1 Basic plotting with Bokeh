@@ -1,0 +1,81 @@
+1 Basic plotting with Bokeh
+An introduction to basic plotting with Bokeh. You will create your first plots, learn about different data formats Bokeh understands, and make visual customizations for selections and mouse hovering.
+
+Icon exercise video done
+Plotting with glyphs
+50 xp
+Icon exercise mc
+What are glyphs?
+50 xp
+Icon exercise interactive
+A simple scatter plot
+100 xp
+Icon exercise interactive
+A scatter plot with different shapes
+100 xp
+Icon exercise interactive
+Customizing your scatter plots
+100 xp
+Icon exercise video
+Additional glyphs
+50 xp
+Icon exercise interactive
+Lines
+100 xp
+Icon exercise interactive
+Lines and markers
+100 xp
+Icon exercise interactive
+Patches
+100 xp
+Icon exercise video
+Data formats
+50 xp
+Icon exercise interactive
+Plotting data from NumPy arrays
+100 xp
+Icon exercise interactive
+Plotting data from Pandas DataFrames
+100 xp
+Icon exercise mc
+The Bokeh ColumnDataSource
+50 xp
+Icon exercise interactive
+The Bokeh ColumnDataSource (continued)
+100 xp
+Icon exercise video
+Customizing glyphs
+50 xp
+Icon exercise interactive
+Selection and non-selection glyphs
+100 xp
+Icon exercise interactive
+Hover glyphs
+100 xp
+Icon exercise interactive
+Colormapping
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
