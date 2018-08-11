@@ -1,0 +1,67 @@
+2 Layouts, Interactions, and Annotations
+Learn how to combine mutiple Bokeh plots into different kinds of layouts on a page, how to easily link different plots together in various ways, and how to add annotations such as legends and hover tooltips.
+
+Icon exercise video
+Introduction to layouts
+50 xp
+Icon exercise interactive
+Creating rows of plots
+100 xp
+Icon exercise interactive
+Creating columns of plots
+100 xp
+Icon exercise interactive
+Nesting rows and columns of plots
+100 xp
+Icon exercise video
+Advanced layouts
+50 xp
+Icon exercise mc
+Investigating the layout API
+50 xp
+Icon exercise interactive
+Creating gridded layouts
+100 xp
+Icon exercise interactive
+Starting tabbed layouts
+100 xp
+Icon exercise interactive
+Displaying tabbed layouts
+100 xp
+Icon exercise video
+Linking plots together
+50 xp
+Icon exercise interactive
+Linked axes
+100 xp
+Icon exercise interactive
+Linked brushing
+100 xp
+Icon exercise video
+Annotations and guides
+50 xp
+Icon exercise interactive
+How to create legends
+100 xp
+Icon exercise interactive
+Positioning and styling legends
+100 xp
+Icon exercise mc
+Hover tooltips for exposing details
+50 xp
+Icon exercise interactive
+Adding a hover tooltip
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
