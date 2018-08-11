@@ -1,0 +1,90 @@
+3 Building interactive apps with Bokeh
+Bokeh server applications let you connect all of the powerful Python libraries for analytics and data science, such as NumPy and Pandas, to rich interactive Bokeh visualizations. Learn about Bokeh's built-in widgets, how to add them to Bokeh documents alongside plots, and how to connect everything to real python code using the Bokeh server.
+
+Icon exercise video
+Introducing the Bokeh Server
+50 xp
+Icon exercise mc
+Understanding Bokeh apps
+50 xp
+Icon exercise interactive
+Using the current document
+100 xp
+Icon exercise interactive
+Add a single slider
+100 xp
+Icon exercise interactive
+Multiple sliders in one document
+100 xp
+Icon exercise video
+Connecting sliders to plots
+50 xp
+Icon exercise mc
+Adding callbacks to sliders
+50 xp
+Icon exercise interactive
+How to combine Bokeh models into layouts
+100 xp
+Icon exercise interactive
+Learn about widget callbacks
+100 xp
+Icon exercise video
+Updating plots from dropdowns
+50 xp
+Icon exercise interactive
+Updating data sources from dropdown callbacks
+100 xp
+Icon exercise interactive
+Synchronize two dropdowns
+100 xp
+Icon exercise video
+Buttons
+50 xp
+Icon exercise interactive
+Button widgets
+100 xp
+Icon exercise interactive
+Button styles
+100 xp
+Icon exercise video
+Hosting applications for wider audiences
+50 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
