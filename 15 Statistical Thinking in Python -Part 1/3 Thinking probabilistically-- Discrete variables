@@ -1,0 +1,34 @@
+3 Thinking probabilistically-- Discrete variables
+Statistical inference rests upon probability. Because we can very rarely say anything meaningful with absolute certainty from data, we use probabilistic language to make quantitative statements about data. In this chapter, you will learn how to think probabilistically about discrete quantities, those that can only take certain values, like integers. It is an important first step in building the probabilistic language necessary to think statistically.
+
+Probabilistic logic and statistical inference
+50 XP
+What is the goal of statistical inference?
+50 XP
+Why do we use the language of probability?
+50 XP
+Random number generators and hacker statistics
+50 XP
+Generating random numbers using the np.random module
+100 XP
+The np.random module and Bernoulli trials
+100 XP
+How many defaults might we expect?
+100 XP
+Will the bank fail?
+100 XP
+Probability distributions and stories: The Binomial distribution
+50 XP
+Sampling out of the Binomial distribution
+100 XP
+Plotting the Binomial PMF
+100 XP
+Poisson processes and the Poisson distribution
+50 XP
+Relationship between Binomial and Poisson distributions
+100 XP
+How many no-hitters in a season?
+50 XP
+Was 2015 anomalous?
+100 XP
+Hide Details
