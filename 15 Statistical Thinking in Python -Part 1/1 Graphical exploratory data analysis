@@ -1,0 +1,79 @@
+1 Graphical exploratory data analysis
+Look before you leap! A very important proverb, indeed. Prior to diving in headlong into sophisticated statistical inference techniques, you should first explore your data by plotting them and computing simple summary statistics. This process, called exploratory data analysis, is a crucial first step in statistical analysis of data. So it is a fitting subject for the first chapter of Statistical Thinking in Python.
+
+Introduction to exploratory data analysis
+50 XP
+Tukey's comments on EDA
+50 XP
+Advantages of graphical EDA
+50 XP
+Plotting a histogram
+50 XP
+Plotting a histogram of iris data
+100 XP
+Axis labels!
+100 XP
+Adjusting the number of bins in a histogram
+100 XP
+Plotting all of your data: Bee swarm plots
+50 XP
+Bee swarm plot
+100 XP
+Interpreting a bee swarm plot
+50 XP
+Plotting all of your data: Empirical cumulative distribution functions
+50 XP
+Computing the ECDF
+100 XP
+Plotting the ECDF
+100 XP
+Comparison of ECDFs
+100 XP
+Onward toward the whole story
+50 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
