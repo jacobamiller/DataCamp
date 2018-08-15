@@ -1,0 +1,52 @@
+4 Thinking probabilistically -- Continuous variables
+In the last chapter, you learned about probability distributions of discrete variables. Now it is time to move on to continuous variables, such as those that can take on any fractional value. Many of the principles are the same, but there are some subtleties. At the end of this last chapter of the course, you will be speaking the probabilistic language you need to launch into the inference techniques covered in the sequel to this course.
+
+Probability density functions
+50 XP
+Interpreting PDFs
+50 XP
+Interpreting CDFs
+50 XP
+Introduction to the Normal distribution
+50 XP
+The Normal PDF
+100 XP
+The Normal CDF
+100 XP
+The Normal distribution: Properties and warnings
+50 XP
+Gauss and the 10 Deutschmark banknote
+50 XP
+Are the Belmont Stakes results Normally distributed?
+100 XP
+What are the chances of a horse matching or beating Secretariat's record?
+100 XP
+The Exponential distribution
+50 XP
+Matching a story and a distribution
+50 XP
+Waiting for the next Secretariat
+50 XP
+If you have a story, you can simulate it!
+100 XP
+Distribution of no-hitters and cycles
+100 XP
+Final thoughts and encouragement toward Statistical Thinking II
+50 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
