@@ -1,0 +1,64 @@
+2 Bootstrap confidence intervals
+To "pull yourself up by your bootstraps" is a classic idiom meaning that you achieve a difficult task by yourself with no help at all. In statistical inference, you want to know what would happen if you could repeat your data acquisition an infinite number of times. This task is impossible, but can we use only the data we actually have to get close to the same result as an infinitude of experiments? The answer is yes! The technique to do it is aptly called bootstrapping. This chapter will introduce you to this extraordinarily powerful tool.
+
+Generating bootstrap replicates
+50 XP
+Getting the terminology down
+50 XP
+Bootstrapping by hand
+50 XP
+Visualizing bootstrap samples
+100 XP
+Bootstrap confidence intervals
+50 XP
+Generating many bootstrap replicates
+100 XP
+Bootstrap replicates of the mean and the SEM
+100 XP
+Confidence intervals of rainfall data
+50 XP
+Bootstrap replicates of other statistics
+100 XP
+Confidence interval on the rate of no-hitters
+100 XP
+Pairs bootstrap
+50 XP
+A function to do pairs bootstrap
+100 XP
+Pairs bootstrap of literacy/fertility data
+100 XP
+Plotting bootstrap regressions
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
