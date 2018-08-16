@@ -1,0 +1,61 @@
+3 Introduction to hypothesis testing
+You now know how to define and estimate parameters given a model. But the question remains: how reasonable is it to observe your data if a model is true? This question is addressed by hypothesis tests. They are the icing on the inference cake. After completing this chapter, you will be able to carefully construct and test hypotheses using hacker statistics.
+
+Formulating and simulating a hypothesis
+50 XP
+Generating a permutation sample
+100 XP
+Visualizing permutation sampling
+100 XP
+Test statistics and p-values
+50 XP
+Test statistics
+50 XP
+What is a p-value?
+50 XP
+Generating permutation replicates
+100 XP
+Look before you leap: EDA before hypothesis testing
+100 XP
+Permutation test on frog data
+100 XP
+Bootstrap hypothesis tests
+50 XP
+A one-sample bootstrap hypothesis test
+100 XP
+A bootstrap test for identical distributions
+100 XP
+A two-sample bootstrap hypothesis test for difference of means.
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
