@@ -202,9 +202,6 @@ _ = plt.legend(('1975', '2012'), loc='upper left')
 # Show the plot
 plt.show()
 
-
-
-EXERCISE
 EXERCISE
 EDA of beak length and depth
 The beak length data are stored as bl_1975 and bl_2012, again with units of millimeters (mm). You still have the beak depth data stored in bd_1975 and bd_2012. Make scatter plots of beak depth (y-axis) versus beak length (x-axis) for the 1975 and 2012 specimens.
@@ -217,9 +214,162 @@ Add a legend and label the axes.
 Show your plot.
 Take Hint (-30 XP)
  +100 XP
+ 
+# Make scatter plot of 1975 data
+_ = plt.plot(bl_1975, bd_1975, marker='.',
+             linestyle='none', color='blue', alpha=0.5)
+
+# Make scatter plot of 2012 data
+_ = plt.plot(bl_2012, bd_2012, marker='.',
+             linestyle='none', color='red', alpha=0.5)
+
+# Label axes and make legend
+_ = plt.xlabel('beak length (mm)')
+_ = plt.ylabel('beak depth (mm)')
+_ = plt.legend(('1975', '2012'), loc='upper left')
+
+# Show the plot
+plt.show()
+
 Great work! In looking at the plot, we see that beaks got deeper (the red points are higher up in the y-direction), 
 but not really longer. If anything, they got a bit shorter, since the red dots are to the left of the blue dots. 
 So, it does not look like the beaks kept the same shape; they became shorter and deeper.
+
+EXERCISE
+Linear regressions
+Perform a linear regression for both the 1975 and 2012 data. Then, perform pairs bootstrap estimates for the regression parameters. Report 95% confidence intervals on the slope and intercept of the regression line.
+
+You will use the draw_bs_pairs_linreg() function you wrote back in chapter 2.
+
+As a reminder, its call signature is draw_bs_pairs_linreg(x, y, size=1), and it returns bs_slope_reps and bs_intercept_reps.
+
+INSTRUCTIONS
+100 XP
+Compute the slope and intercept for both the 1975 and 2012 data sets.
+Obtain 1000 pairs bootstrap samples for the linear regressions using your draw_bs_pairs_linreg() function.
+Compute 95% confidence intervals for the slopes and the intercepts.
+Take Hint (-30 XP)
+
+# Compute the linear regressions
+slope_1975, intercept_1975 = np.polyfit(bl_1975, bd_1975, 1)
+slope_2012, intercept_2012 = np.polyfit(bl_2012, bd_2012, 1)
+
+# Perform pairs bootstrap for the linear regressions
+bs_slope_reps_1975, bs_intercept_reps_1975 = \
+        draw_bs_pairs_linreg(bl_1975, bd_1975, 1000)
+bs_slope_reps_2012, bs_intercept_reps_2012 = \
+        draw_bs_pairs_linreg(bl_2012, bd_2012, 1000)
+
+# Compute confidence intervals of slopes
+slope_conf_int_1975 = np.percentile(bs_slope_reps_1975, [2.5, 97.5])
+slope_conf_int_2012 = np.percentile(bs_slope_reps_2012, [2.5, 97.5])
+intercept_conf_int_1975 = np.percentile(bs_intercept_reps_1975, [2.5, 97.5])
+intercept_conf_int_2012 = np.percentile(bs_intercept_reps_2012, [2.5, 97.5])
+
+# Print the results
+print('1975: slope =', slope_1975,
+      'conf int =', slope_conf_int_1975)
+print('1975: intercept =', intercept_1975,
+      'conf int =', intercept_conf_int_1975)
+print('2012: slope =', slope_2012,
+      'conf int =', slope_conf_int_2012)
+print('2012: intercept =', intercept_2012,
+      'conf int =', intercept_conf_int_2012)
+
+Nicely done! It looks like they have the same slope, but different intercepts.
+
+EXERCISE
+Displaying the linear regression results
+Now, you will display your linear regression results on the scatter plot, the code for which is already pre-written for you from your previous exercise. To do this, take the first 100 bootstrap samples (stored in bs_slope_reps_1975, bs_intercept_reps_1975, bs_slope_reps_2012, and bs_intercept_reps_2012) and plot the lines with alpha=0.2 and linewidth=0.5 keyword arguments to plt.plot().
+
+INSTRUCTIONS
+100 XP
+Generate the x-values for the bootstrap lines using np.array(). They should consist of 10 mm and 17 mm.
+Write a for loop to plot 100 of the bootstrap lines for the 1975 and 2012 data sets. The lines for the 1975 data set should be 'blue' and those for the 2012 data set should be 'red'.
+Hit 'Submit Answer' to view the plot!
+Take Hint (-30 XP)
+
+# Make scatter plot of 1975 data
+_ = plt.plot(bl_1975, bd_1975, marker='.',
+             linestyle='none', color='blue', alpha=0.5)
+
+# Make scatter plot of 2012 data
+_ = plt.plot(bl_2012, bd_2012, marker='.',
+             linestyle='none', color='red', alpha=0.5)
+
+# Label axes and make legend
+_ = plt.xlabel('beak length (mm)')
+_ = plt.ylabel('beak depth (mm)')
+_ = plt.legend(('1975', '2012'), loc='upper left')
+
+# Generate x-values for bootstrap lines: x
+x = np.array([10, 17])
+
+# Plot the bootstrap lines
+for i in range(100):
+    plt.plot(x, bs_slope_reps_1975[i] * x + bs_intercept_reps_1975[i],
+             linewidth=0.5, alpha=0.2, color='blue')
+    plt.plot(x, bs_slope_reps_2012[i] * x + bs_intercept_reps_2012[i],
+             linewidth=0.5, alpha=0.2, color='red')
+
+# Draw the plot again
+plt.show()
+
+EXERCISE
+Beak length to depth ratio
+The linear regressions showed interesting information about the beak geometry. The slope was the same in 1975 and 2012, suggesting that for every millimeter gained in beak length, the birds gained about half a millimeter in depth in both years. However, if we are interested in the shape of the beak, we want to compare the ratio of beak length to beak depth. Let's make that comparison.
+
+Remember, the data are stored in bd_1975, bd_2012, bl_1975, and bl_2012.
+
+INSTRUCTIONS
+100 XP
+Make arrays of the beak length to depth ratio of each bird for 1975 and for 2012.
+Compute the mean of the length to depth ratio for 1975 and for 2012.
+Generate 10,000 bootstrap replicates each for the mean ratio for 1975 and 2012 using your draw_bs_reps() function.
+Get a 99% bootstrap confidence interval for the length to depth ratio for 1975 and 2012.
+Print the results.
+Take Hint (-30 XP)
+
+# Compute length-to-depth ratios
+ratio_1975 = bl_1975 / bd_1975
+ratio_2012 = bl_2012 / bd_2012
+
+# Compute means
+mean_ratio_1975 = np.mean(ratio_1975)
+mean_ratio_2012 = np.mean(ratio_2012)
+
+# Generate bootstrap replicates of the means
+bs_replicates_1975 = draw_bs_reps(ratio_1975, np.mean, size=10000)
+bs_replicates_2012 = draw_bs_reps(ratio_2012, np.mean, size=10000)
+
+# Compute the 99% confidence intervals
+conf_int_1975 = np.percentile(bs_replicates_1975, [0.5, 99.5])
+conf_int_2012 = np.percentile(bs_replicates_2012, [0.5, 99.5])
+
+# Print the results
+print('1975: mean ratio =', mean_ratio_1975,
+      'conf int =', conf_int_1975)
+print('2012: mean ratio =', mean_ratio_2012,
+      'conf int =', conf_int_2012)
+
+How different is the ratio?
+In the last exercise, you showed that the mean beak length to depth ratio was 1.58 in 1975 and 1.47 in 2012. The low end of the 1975 99% confidence interval was 1.56 mm and the high end of the 99% confidence interval in 2012 was 1.49 mm. In addition to these results, what would you say about the ratio of beak length to depth?
+
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+The mean beak length-to-depth ratio decreased by about 0.1, or 7%, from 1975 to 2012. The 99% confidence intervals are not even close to overlapping, so this is a real change. The beak shape changed.
+press 1
+It is impossible to say if this is a real effect or just due to noise without computing a p-value. Let me compute the p-value and get back to you.
+press 2
+Take Hint (-15 XP)
+
+Ansswer #1 - The mean beak length-to-depth ratio decreased by about 0.1, or 7%, from 1975 to 2012. 
+The 99% confidence intervals are not even close to overlapping, so this is a real change. The beak shape changed.
+
+Yes! When the confidence intervals are not even close to overlapping, the effect is much bigger than variation. 
+You can do a p-value, but the result is already clear.
+
 
 
 
