@@ -35,7 +35,155 @@ Set theory challenge
 100 XP
 Hide Details
 
+EXERCISE
+Union
+Near query result to the right, you will see two new tables with names economies2010 and economies2015.
 
+INSTRUCTIONS
+100 XP
+Combine these two tables into one table containing all of the fields in economies2010. The economies table is also included for reference.
+Sort this resulting single table by country code and then by year, both in ascending order.
+Take Hint (-30 XP)
+
+-- pick specified columns from 2010 table
+SELECT *
+-- 2010 table will be on top
+FROM economies2010
+-- which set theory clause?
+UNION
+-- pick specified columns from 2015 table
+SELECT *
+-- 2015 table on the bottom
+FROM economies2015
+-- order accordingly
+ORDER BY code, year;
+
+EXERCISE
+Union (2)
+UNION can also be used to determine all occurrences of a field across multiple tables. Try out this exercise with no starter code.
+
+INSTRUCTIONS
+100 XP
+Determine all (non-duplicated) country codes in either the cities or the currencies table. The result should be a table with only one field called country_code.
+Sort by country_code in alphabetical order.
+Take Hint (-30 XP)
+
+SELECT country_code
+FROM cities
+UNION
+SELECT code
+FROM currencies
+ORDER BY country_code;
+
+EXERCISE
+Union all
+As you saw, duplicates were removed from the previous two exercises by using UNION.
+
+To include duplicates, you can use UNION ALL.
+
+INSTRUCTIONS
+100 XP
+Determine all combinations (include duplicates) of country code and year that exist in either the economies or the populations tables. Order by code then year.
+The result of the query should only have two columns/fields.
+Think about how many records this query should result in.
+You'll use code very similar to this in your next exercise after the video. Make note of this code after completing it.
+Take Hint (-30 XP)
+
+SELECT code, year
+FROM economies
+UNION ALL
+SELECT country_code, year
+FROM populations
+ORDER BY code, year;
+
+EXERCISE
+Intersect
+Repeat the previous UNION ALL exercise, this time looking at the records in common for country code and year for the economies and populations tables.
+
+INSTRUCTIONS
+100 XP
+Again, order by code and then by year, both in ascending order.
+Note the number of records here (given at the bottom of query result) compared to the similar UNION ALL query result (814 records).
+Take Hint (-30 XP)
+
+SELECT code, year
+FROM economies
+INTERSECT
+SELECT country_code, year
+FROM populations
+ORDER BY code, year;
+
+EXERCISE
+Intersect (2)
+As you think about major world cities and their corresponding country, you may ask which countries also have a city with the same name as their country name?
+
+INSTRUCTIONS
+100 XP
+Use INTERSECT to answer this question with countries and cities!
+
+Take Hint (-30 XP)
+
+SELECT name
+FROM countries
+INTERSECT
+SELECT name
+FROM cities;
+
+Review union and intersect
+Which of the following combinations of terms and definitions is correct?
+
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+UNION: returns all records (potentially duplicates) in both tables
+press 1
+UNION ALL: returns only unique records
+press 2
+INTERSECT: returns only records appearing in both tables
+press 3
+None of the above are matched correctly
+press 4
+Take Hint (-15 XP)
+
+Answer #3 - INTERSECT: returns only records appearing in both tables
+
+EXERCISE
+Except
+Get the names of cities in cities which are not noted as capital cities in countries as a single field result.
+
+Note that there are some countries in the world that are not included in the countries table, which will result in some cities not being labeled as capital cities when in fact they are.
+
+INSTRUCTIONS
+100 XP
+Order the resulting field in ascending order.
+Can you spot the city/cities that are actually capital cities which this query misses?
+Take Hint (-30 XP)
+
+SELECT city.name
+FROM cities AS city
+EXCEPT
+SELECT country.capital
+FROM countries AS country
+ORDER BY name;
+
+EXERCISE
+Except (2)
+Now you will complete the previous query in reverse!
+
+Determine the names of capital cities that are not listed in the cities table.
+
+INSTRUCTIONS
+100 XP
+Order by capital in ascending order.
+The cities table contains information about 236 of the world's most populous cities. The result of your query may surprise you in terms of the number of capital cities that DO NOT appear in this list!
+Take Hint (-30 XP)
+
+SELECT country.capital
+FROM countries AS country
+EXCEPT
+SELECT city.name
+FROM cities AS city
+ORDER BY capital;
 
 
 
