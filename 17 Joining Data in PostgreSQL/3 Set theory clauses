@@ -185,54 +185,167 @@ SELECT city.name
 FROM cities AS city
 ORDER BY capital;
 
+EXERCISE
+Semi-join
+You are now going to use the concept of a semi-join to identify languages spoken in the Middle East.
 
+INSTRUCTIONS 
 
+-- INSTRUCTIONS 1/3
+-- Flash back to our Intro to SQL for Data Science course and begin by selecting all country codes in the Middle East as a single field result using SELECT, FROM, and WHERE.
 
+-- -- Failed Try 1 that should work (Because only want you to select countries in Middle East)
+-- SELECT DISTINCT name --DISTINCT comand is new 
+-- FROM languages --Something wrong with FROM not sure what
+-- WHERE code IN
+--   (SELECT code
+--   FROM countries
+--   WHERE region = 'Middle East')
+-- ORDER BY name;
 
+-- -- Failed Try 2 that should work (Because only want you to select countries in Middle East)
+-- SELECT DISTINCT languages.name AS language
+-- FROM languages
+-- INNER JOIN countries
+-- ON languages.code = countries.code
+-- WHERE region = 'Middle East'
+-- ORDER BY language;
 
+-- SELECT code
+-- FROM countries
+-- WHERE region = 'Middle East';
 
+-- -- INSTRUCTIONS 2/3
+-- -- Comment out the answer to the previous tab by surrounding it in /* and */. You'll come back to it!
+-- -- Below the commented code, select only unique languages by name appearing in the languages table.
+-- -- Order the resulting single field table by name in ascending order.
 
+-- /*
+-- SELECT code
+-- FROM countries
+-- WHERE region = 'Middle East';
+-- */
 
+-- SELECT DISTINCT name
+-- FROM languages
+-- ORDER BY name
 
+-- INSTRUCTIONS 3/3
+-- Now combine the previous two queries into one query using WHERE to determine the unique languages spoken in the Middle East.
+-- Carefully review this result and its code after completing it. It serves as a great example of subqueries, which are the focus of Chapter 4.
 
+SELECT DISTINCT name
+FROM languages
+WHERE code IN
+    (SELECT code
+    FROM countries
+    WHERE region = 'Middle East')
+ORDER BY name;
 
+EXERCISE
+Relating semi-join to a tweaked inner join
+Let's revisit the code from the previous exercise. Sometimes problems solved with semi-joins can also be solved using an inner join.
 
+What is missing from the code at the bottom of the editor to get it to match with the correct answer produced by the commented out code at the top of the editor, which retrieves languages spoken in the Middle East?
 
+INSTRUCTIONS
+50 XP
+Possible Answers
+HAVING instead of WHERE
+press 1
+DISTINCT
+press 2
+UNIQUE
+press 3
+Take Hint (-15 XP)
 
+Answer #2 - DISTINCT
 
+-- Previous exercise
+/*
+SELECT DISTINCT name
+FROM languages
+WHERE code IN
+  (SELECT code
+   FROM countries
+   WHERE region = 'Middle East')
+ORDER BY name;
+*/
 
+SELECT DISTINCT languages.name AS language --Added DISTINCT
+FROM languages
+INNER JOIN countries
+ON languages.code = countries.code
+WHERE region = 'Middle East'
+ORDER BY language;
 
+EXERCISE
+Diagnosing problems using anti-join
+Another powerful join in SQL is the anti-join. It is particularly useful in identifying which records are causing an incorrect number of records to appear in join queries.
 
+You will also see another example of a subquery here, as you saw in the first exercise on semi-joins. Your goal is to identify the currencies used in Oceanian countries!
 
+INSTRUCTIONS
+-- -- INSTRUCTIONS 1/3
+-- -- Begin by determining the number of countries in countries that are listed in Oceania using SELECT, FROM, and WHERE.
 
+-- SELECT COUNT(countries.name)
+-- FROM countries
+-- WHERE continent = 'Oceania';
 
+-- -- INSTRUCTIONS 2/3
+-- -- Complete an inner join with countries AS c1 on the left and currencies AS c2 on the right to get the different currencies used in the countries of Oceania.
+-- -- Match ON the code field in the two tables.
+-- -- Include the country code, country name, and basic_unit AS currency.
+-- -- Observe query result and make note of how many different countries are listed here.
 
+-- SELECT c1.code, c1.name, c2.basic_unit AS currency
+-- FROM countries AS c1
+-- INNER JOIN currencies AS c2
+-- USING (code)
+-- WHERE continent = 'Oceania';
 
+-- INSTRUCTIONS 3/3
+-- Note that not all countries in Oceania were listed in the resulting inner join with currencies. Use an anti-join to determine which countries were not included!
+-- Use NOT IN and (SELECT code FROM currencies) as a subquery to get the country code and country name for the Oceanian countries that are not included in the currencies table.
 
+SELECT c1.code, c1.name
+FROM countries AS c1
+WHERE c1.continent = 'Oceania'
+    AND code NOT IN
+    (SELECT code 
+    FROM currencies);
 
+EXERCISE
+Set theory challenge
+Congratulations! You've now made your way to the challenge problem for this third chapter. Your task here will be to incorporate two of UNION/UNION ALL/INTERSECT/EXCEPT to solve a challenge involving three tables.
 
+In addition, you will use a subquery as you have in the last two exercises! This will be great practice as you hop into subqueries more in Chapter 4!
 
+INSTRUCTIONS
+100 XP
+Identify the country codes that are included in either economies or currencies but not in populations.
+Use that result to determine the names of cities in the countries that match the specification in the previous instruction.
+Take Hint (-30 XP)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- select the city name
+SELECT name
+-- alias the table where city name resides
+FROM cities AS c1
+-- choose only records matching the result of multiple set theory clauses
+WHERE country_code IN
+(
+    -- select appropriate field from economies AS e
+    SELECT e.code
+    FROM economies AS e
+    -- get all additional (unique) values of the field from currencies AS c2  
+    UNION 
+    SELECT c2.code
+    FROM currencies AS c2
+    -- exclude those appearing in populations AS p
+    EXCEPT
+    SELECT p.country_code
+    FROM populations AS p
+);
 
 
