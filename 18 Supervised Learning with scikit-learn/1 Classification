@@ -1,0 +1,71 @@
+1 Classification
+In this chapter, you will be introduced to classification problems and learn how to solve them using supervised learning techniques. Classification problems are prevalent in a variety of domains, ranging from finance to healthcare. Here, you will have the chance to apply what you are learning to a political dataset, where you classify the party affiliation of United States Congressmen based on their voting records.
+
+Supervised learning
+50 XP
+Which of these is a classification problem?
+50 XP
+Exploratory data analysis
+50 XP
+Numerical EDA
+100 XP
+Visual EDA
+50 XP
+The classification challenge
+50 XP
+k-Nearest Neighbors: Fit
+100 XP
+k-Nearest Neighbors: Predict
+100 XP
+Measuring model performance
+50 XP
+The digits recognition dataset
+100 XP
+Train/Test Split + Fit/Predict/Accuracy
+100 XP
+Overfitting and underfitting
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
