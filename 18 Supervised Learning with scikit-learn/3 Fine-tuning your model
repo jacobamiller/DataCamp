@@ -1,0 +1,71 @@
+3 Fine-tuning your model
+Having trained your model, your next task is to evaluate its performance. What metrics can you use to gauge how good your model is? So far, you have used accuracy for classification and R-squared for regression. In this chapter, you will learn about some of the other metrics available in scikit-learn that will allow you to assess your model's performance in a more nuanced manner. You will then learn to optimize both your classification as well as regression models using hyperparameter tuning.
+
+How good is your model?
+50 XP
+Metrics for classification
+100 XP
+Logistic regression and the ROC curve
+50 XP
+Building a logistic regression model
+100 XP
+Plotting an ROC curve
+100 XP
+Precision-recall Curve
+100 XP
+Area under the ROC curve
+50 XP
+AUC computation
+100 XP
+Hyperparameter tuning
+50 XP
+Hyperparameter tuning with GridSearchCV
+100 XP
+Hyperparameter tuning with RandomizedSearchCV
+100 XP
+Hold-out set for final evaluation
+50 XP
+Hold-out set reasoning
+50 XP
+Hold-out set in practice I: Classification
+100 XP
+Hold-out set in practice II: Regression
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
