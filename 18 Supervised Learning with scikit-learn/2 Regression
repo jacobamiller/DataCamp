@@ -1,0 +1,60 @@
+2 Regression
+In the previous chapter, you made use of image and political datasets to predict binary as well as multiclass outcomes. But what if your problem requires a continuous outcome? Regression, which is the focus of this chapter, is best suited to solving such problems. You will learn about fundamental concepts in regression and apply them to predict the life expectancy in a given country using Gapminder data.
+
+Introduction to regression
+50 XP
+Which of the following is a regression problem?
+50 XP
+Importing data for supervised learning
+100 XP
+Exploring the Gapminder data
+50 XP
+The basics of linear regression
+50 XP
+Fit & predict for regression
+100 XP
+Train/test split for regression
+100 XP
+Cross-validation
+50 XP
+5-fold cross-validation
+100 XP
+K-Fold CV comparison
+100 XP
+Regularized regression
+50 XP
+Regularization I: Lasso
+100 XP
+Regularization II: Ridge
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
