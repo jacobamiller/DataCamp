@@ -1,0 +1,84 @@
+4 Preprocessing and pipelines
+This chapter will introduce the notion of pipelines and how scikit-learn allows for transformers and estimators to be chained together and used as a single unit. Pre-processing techniques will be then be introduced as a way to enhance model performance and pipelines will be the glue that ties together concepts in the prior chapters.
+
+Preprocessing data
+50 XP
+Exploring categorical features
+100 XP
+Creating dummy variables
+100 XP
+Regression with categorical features
+100 XP
+Handling missing data
+50 XP
+Dropping missing data
+100 XP
+Imputing missing data in a ML Pipeline I
+100 XP
+Imputing missing data in a ML Pipeline II
+100 XP
+Centering and scaling
+50 XP
+Centering and scaling your data
+100 XP
+Centering and scaling in a pipeline
+100 XP
+Bringing it all together I: Pipeline for classification
+100 XP
+Bringing it all together II: Pipeline for regression
+100 XP
+Final thoughts
+50 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
