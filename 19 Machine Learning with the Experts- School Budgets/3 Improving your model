@@ -1,0 +1,86 @@
+3 Improving your model
+Here, you'll improve on your benchmark model using pipelines. Because the budget consists of both text and numeric data, you'll learn to how build pipielines that process multiple types of data. You'll also explore how the flexibility of the pipeline workflow makes testing different approaches efficient, even in complicated problems like this one!
+
+Pipelines, feature & text preprocessing
+50 XP
+Instantiate pipeline
+100 XP
+Preprocessing numeric features
+100 XP
+Text features and feature unions
+50 XP
+Preprocessing text features
+100 XP
+Multiple types of processing: FunctionTransformer
+100 XP
+Multiple types of processing: FeatureUnion
+100 XP
+Choosing a classification model
+50 XP
+Using FunctionTransformer on the main dataset
+100 XP
+Add a model to the pipeline
+100 XP
+Try a different class of model
+100 XP
+Can you adjust the model or parameters to improve accuracy?
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
