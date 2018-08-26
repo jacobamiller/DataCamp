@@ -1,0 +1,81 @@
+1 Exploring the raw data
+In this chapter, you'll be introduced to the problem you'll be solving in this course. How do you accurately classify line-items in a school budget based on what that money is being used for? You will explore the raw text and numeric values in the dataset, both quantitatively and visually. And you'll learn how to measure success when trying to predict class labels for each row of the dataset.
+
+Introducing the challenge
+50 XP
+What category of problem is this?
+50 XP
+What is the goal of the algorithm?
+50 XP
+Exploring the data
+50 XP
+Loading the data
+50 XP
+Summarizing the data
+100 XP
+Looking at the datatypes
+50 XP
+Exploring datatypes in pandas
+50 XP
+Encode the labels as categorical variables
+100 XP
+Counting unique labels
+100 XP
+How do we measure success?
+50 XP
+Penalizing highly confident wrong answers
+50 XP
+Computing log loss with NumPy
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
