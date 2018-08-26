@@ -1,0 +1,76 @@
+2 Creating a simple first model
+In this chapter, you'll build a first-pass model. You'll use numeric data only to train the model. Spoiler alert - throwing out all of the text data is bad for performance! But you'll learn how to format your predictions. Then, you'll be introduced to natural language processing (NLP) in order to start working with the large amounts of text in the data.
+
+It's time to build a model
+50 XP
+Setting up a train-test split in scikit-learn
+100 XP
+Training a model
+100 XP
+Making predictions
+50 XP
+Use your model to predict values on holdout data
+100 XP
+Writing out your results to a csv for submission
+100 XP
+A very brief introduction to NLP
+50 XP
+Tokenizing text
+50 XP
+Testing your NLP credentials with n-grams
+50 XP
+Representing text numerically
+50 XP
+Creating a bag-of-words in scikit-learn
+100 XP
+Combining text columns for tokenization
+100 XP
+What's in a token?
+100 XP
+Hide Details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
