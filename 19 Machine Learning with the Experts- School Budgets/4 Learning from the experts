@@ -166,45 +166,207 @@ pl = Pipeline([
     
 # Log loss score: 1.2681. Great work! You'll now add some additional tricks to make the pipeline even better.
 
+Which models of the data include interaction terms?
+Recall from the video that interaction terms involve products of features.
+
+Suppose we have two features x and y, and we use models that process the features as follows:
+
+βx + βy + ββ
+βxy + βx + βy
+βx + βy + βx^2 + βy^2
+where β is a coefficient in your model (not a feature).
+
+Which expression(s) include interaction terms?
+
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+The first expression.
+press 1
+The second expression.
+press 2
+The third expression.
+press 3
+The first and third expressions.
+press 4
+Take Hint (-15 XP)
+
+Answer #2 - The second expression. βxy + βx + βy
+# Yes! An xy term is present, which represents interactions between features. Nice work, let''s implement this!
+
+
+EXERCISE
+Implement interaction modeling in scikit-learn
+It's time to add interaction features to your model. The PolynomialFeatures object in scikit-learn does just that, but here you're going to use a custom interaction object, SparseInteractions. Interaction terms are a statistical tool that lets your model express what happens if two features appear together in the same row.
+
+SparseInteractions does the same thing as PolynomialFeatures, but it uses sparse matrices to do so. You can get the code for SparseInteractions at this GitHub Gist.
+
+PolynomialFeatures and SparseInteractions both take the argument degree, which tells them what polynomial degree of interactions to compute.
+
+You're going to consider interaction terms of degree=2 in your pipeline. You will insert these steps after the preprocessing steps you've built out so far, but before the classifier steps.
+
+Pipelines with interaction terms take a while to train (since you're making n features into n-squared features!), so as long as you set it up right, we'll do the heavy lifting and tell you what your score is!
+
+INSTRUCTIONS
+100 XP
+Add the interaction terms step using SparseInteractions() with degree=2. Give it a name of 'int', and make sure it is after the preprocessing step but before scaling.
+Take Hint (-30 XP)
+
+# Instantiate pipeline: pl
+pl = Pipeline([
+        ('union', FeatureUnion(
+            transformer_list = [
+                ('numeric_features', Pipeline([
+                    ('selector', get_numeric_data),
+                    ('imputer', Imputer())
+                ])),
+                ('text_features', Pipeline([
+                    ('selector', get_text_data),
+                    ('vectorizer', CountVectorizer(token_pattern=TOKENS_ALPHANUMERIC,
+                                                   ngram_range=(1, 2))),  
+                    ('dim_red', SelectKBest(chi2, chi_k))
+                ]))
+             ]
+        )),
+        ('int', SparseInteractions(degree=2)),
+        ('scale', MaxAbsScaler()),
+        ('clf', OneVsRestClassifier(LogisticRegression()))
+    ])
+
+# Log loss score: 1.2256. Nice improvement from 1.2681! The student is becoming the master!
+
+EXERCISE
+Why is hashing a useful trick?
+In the video, Peter explained that a hash function takes an input, in your case a token, and outputs a hash value. For example, the input may be a string and the hash value may be an integer.
+
+We've loaded a familiar python datatype, a dictionary called hash_dict, that makes this mapping concept a bit more explicit. In fact, python dictionaries ARE hash tables!
+
+Print hash_dict in the IPython Shell to get a sense of how strings can be mapped to integers.
+
+By explicitly stating how many possible outputs the hashing function may have, we limit the size of the objects that need to be processed. With these limits known, computation can be made more efficient and we can get results faster, even on large datasets.
+
+Using the above information, answer the following:
+
+Why is hashing a useful trick?
+
+INSTRUCTIONS
+50 XP
+Possible Answers
+Hashing isn't useful unless you're working with numbers.
+press 1
+Some problems are memory-bound and not easily parallelizable, but hashing parallelizes them.
+press 2
+Some problems are memory-bound and not easily parallelizable, and hashing enforces a fixed length computation instead of using a mutable datatype (like a dictionary).
+press 3
+Hashing enforces a mutable length computation instead of using a fixed length datatype, like a dictionary.
+press 4
+Take Hint (-15 XP)
+
+Answer #3 - Some problems are memory-bound and not easily parallelizable, and hashing enforces a fixed length computation instead of using a mutable datatype (like a dictionary).
+# Yes! Enforcing a fixed length can speed up calculations drastically, especially on large datasets!
 
 
 
+EXERCISE
+EXERCISE
+Implementing the hashing trick in scikit-learn
+In this exercise you will check out the scikit-learn implementation of HashingVectorizer before adding it to your pipeline later.
 
+As you saw in the video, HashingVectorizer acts just like CountVectorizer in that it can accept token_pattern and ngram_range parameters. The important difference is that it creates hash values from the text, so that we get all the computational advantages of hashing!
 
+INSTRUCTIONS
+100 XP
+Import HashingVectorizer from sklearn.feature_extraction.text.
+Instantiate the HashingVectorizer as hashing_vec using the TOKENS_ALPHANUMERIC pattern.
+Fit and transform hashing_vec using text_data. Save the result as hashed_text.
+Hit 'Submit Answer' to see some of the resulting hash values.
+Take Hint (-30 XP)
 
+# Import HashingVectorizer
+from sklearn.feature_extraction.text import HashingVectorizer 
 
+# Get text data: text_data
+text_data = combine_text_columns(X_train)
 
+# Create the token pattern: TOKENS_ALPHANUMERIC
+TOKENS_ALPHANUMERIC = '[A-Za-z0-9]+(?=\\s+)' 
 
+# Instantiate the HashingVectorizer: hashing_vec
+hashing_vec = HashingVectorizer(token_pattern=TOKENS_ALPHANUMERIC)
 
+# Fit and transform the Hashing Vectorizer
+hashed_text = hashing_vec.fit_transform(text_data)
 
+# Create DataFrame and print the head
+hashed_df = pd.DataFrame(hashed_text.data)
+print(hashed_df.head())
 
+# Nice! As you can see, some text is hashed to the same value, but as Peter mentioned in the video, this doesn't neccessarily hurt performance.
 
+EXERCISE
+Build the winning model
+You have arrived! This is where all of your hard work pays off. It's time to build the model that won DrivenData's competition.
 
+You've constructed a robust, powerful pipeline capable of processing training and testing data. Now that you understand the data and know all of the tools you need, you can essentially solve the whole problem in a relatively small number of lines of code. Wow!
 
+All you need to do is add the HashingVectorizer step to the pipeline to replace the CountVectorizer step.
 
+The parameters non_negative=True, norm=None, and binary=False make the HashingVectorizer perform similarly to the default settings on the CountVectorizer so you can just replace one with the other.
 
+INSTRUCTIONS
+100 XP
+Import HashingVectorizer from sklearn.feature_extraction.text.
+Add a HashingVectorizer step to the pipeline.
+Name the step 'vectorizer'.
+Use the TOKENS_ALPHANUMERIC token pattern.
+Specify the ngram_range to be (1, 2)
+Take Hint (-30 XP)
 
+# Import the hashing vectorizer
+from sklearn.feature_extraction.text import HashingVectorizer
 
+# Instantiate the winning model pipeline: pl
+pl = Pipeline([
+        ('union', FeatureUnion(
+            transformer_list = [
+                ('numeric_features', Pipeline([
+                    ('selector', get_numeric_data),
+                    ('imputer', Imputer())
+                ])),
+                ('text_features', Pipeline([
+                    ('selector', get_text_data),
+                    ('vectorizer', HashingVectorizer(token_pattern=TOKENS_ALPHANUMERIC,
+                                                     non_negative=True, norm=None, binary=False,
+                                                     ngram_range=(1, 2))),
+                    ('dim_red', SelectKBest(chi2, chi_k))
+                ]))
+             ]
+        )),
+        ('int', SparseInteractions(degree=2)),
+        ('scale', MaxAbsScaler()),
+        ('clf', OneVsRestClassifier(LogisticRegression()))
+    ])
+# Well done! Log loss: 1.2258. Looks like the performance is about the same, but this is expected since the HashingVectorizer should work the same as the CountVectorizer. Try this pipeline out on the whole dataset on your local machine to see its full power!
 
+What tactics got the winner the best score?
+Now you've implemented the winning model from start to finish. If you want to use this model locally, this Jupyter notebook contains all the code you've worked so hard on. You can now take that code and build on it!
 
+Let's take a moment to reflect on why this model did so well. What tactics got the winner the best score?
 
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+The winner used a 500 layer deep convolutional neural network to master the budget data.
+press 1
+The winner used an ensemble of many models for classification, taking the best results as predictions.
+press 2
+The winner used skillful NLP, efficient computation, and simple but powerful stats tricks to master the budget data.
+press 3
+Take Hint (-15 XP)
 
+Ansswer #3 - The winner used skillful NLP, efficient computation, and simple but powerful stats tricks to master the budget data.
+# Yep! Often times simpler is better, and understanding the problem in depth leads to simpler solutions!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+datacamp/course-resources-ml-with-experts-budgets 
+https://github.com/datacamp/course-resources-ml-with-experts-budgets/blob/master/notebooks/1.0-full-model.ipynb
 
