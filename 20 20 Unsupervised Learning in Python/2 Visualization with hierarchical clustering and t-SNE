@@ -1,0 +1,89 @@
+2 Visualization with hierarchical clustering and t-SNE
+In this chapter, you'll learn about two unsupervised learning techniques for data visualization, hierarchical clustering and t-SNE. Hierarchical clustering merges the data samples into ever-coarser clusters, yielding a tree visualization of the resulting cluster hierarchy. t-SNE maps the data samples into 2d space so that the proximity of the samples to one another can be visualized.
+
+Icon exercise video
+Visualizing hierarchies
+50 xp
+Icon exercise mc
+How many merges?
+50 xp
+Icon exercise interactive
+Hierarchical clustering of the grain data
+100 xp
+Icon exercise interactive
+Hierarchies of stocks
+100 xp
+Icon exercise video
+Cluster labels in hierarchical clustering
+50 xp
+Icon exercise mc
+Which clusters are closest?
+50 xp
+Icon exercise interactive
+Different linkage, different hierarchical clustering!
+100 xp
+Icon exercise mc
+Intermediate clusterings
+50 xp
+Icon exercise interactive
+Extracting the cluster labels
+100 xp
+Icon exercise video
+t-SNE for 2-dimensional maps
+50 xp
+Icon exercise interactive
+t-SNE visualization of grain dataset
+100 xp
+Icon exercise interactive
+A t-SNE map of the stock market
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
