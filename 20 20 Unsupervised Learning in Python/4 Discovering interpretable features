@@ -1,0 +1,108 @@
+4 Discovering interpretable features
+In this chapter, you'll learn about a dimension reduction technique called "Non-negative matrix factorization" ("NMF") that expresses samples as combinations of interpretable parts. For example, it expresses documents as combinations of topics, and images in terms of commonly occurring visual patterns. You'll also learn to use NMF to build recommender systems that can find you similar articles to read, or musical artists that match your listening history!
+
+Icon exercise video
+Non-negative matrix factorization (NMF)
+50 xp
+Icon exercise mc
+Non-negative data
+50 xp
+Icon exercise interactive
+NMF applied to Wikipedia articles
+100 xp
+Icon exercise interactive
+NMF features of the Wikipedia articles
+100 xp
+Icon exercise mc
+NMF reconstructs samples
+50 xp
+Icon exercise video
+NMF learns interpretable parts
+50 xp
+Icon exercise interactive
+NMF learns topics of documents
+100 xp
+Icon exercise interactive
+Explore the LED digits dataset
+100 xp
+Icon exercise interactive
+NMF learns the parts of images
+100 xp
+Icon exercise interactive
+PCA doesn't learn parts
+100 xp
+Icon exercise video
+Building recommender systems using NMF
+50 xp
+Icon exercise interactive
+Which articles are similar to 'Cristiano Ronaldo'?
+100 xp
+Icon exercise interactive
+Recommend musical artists part I
+100 xp
+Icon exercise interactive
+Recommend musical artists part II
+100 xp
+Icon exercise video
+Final thoughts
+50 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
