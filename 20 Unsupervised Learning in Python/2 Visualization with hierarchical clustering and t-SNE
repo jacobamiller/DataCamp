@@ -39,9 +39,108 @@ A t-SNE map of the stock market
 100 xp
 HIDE CHAPTER DETAILS
 
+How many merges?
+If there are 5 data samples, how many merge operations will occur in a hierarchical clustering? To help answer this question, think back to the video, in which Ben walked through an example of hierarchical clustering using 6 countries. How many merge operations did that example have?
 
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+4 merges.
+press 1
+5 merges.
+press 2
+This can't be known in advance.
+press 3
+Take Hint (-15 XP)
 
+Answer #1 - 4 merges.
+# Well done! With 5 data samples, there would be 4 merge operations, and with 6 data samples, there would be 5 merges, and so on.
 
+EXERCISE
+Hierarchical clustering of the grain data
+In the video, you learned that the SciPy linkage() function performs hierarchical clustering on an array of samples. Use the linkage() function to obtain a hierarchical clustering of the grain samples, and use dendrogram() to visualize the result. A sample of the grain measurements is provided in the array samples, while the variety of each grain sample is given by the list varieties.
+
+INSTRUCTIONS
+100 XP
+Import:
+linkage and dendrogram from scipy.cluster.hierarchy.
+matplotlib.pyplot as plt.
+Perform hierarchical clustering on samples using the linkage() function with the method='complete' keyword argument. Assign the result to mergings.
+Plot a dendrogram using the dendrogram() function on mergings. Specify the keyword arguments labels=varieties, leaf_rotation=90, and leaf_font_size=6.
+Take Hint (-30 XP)
+
+# Perform the necessary imports
+from scipy.cluster.hierarchy import linkage, dendrogram
+import matplotlib.pyplot as plt
+
+# Calculate the linkage: mergings
+mergings = linkage(samples, method='complete')
+
+# Plot the dendrogram, using varieties as labels
+dendrogram(mergings,
+           labels=varieties,
+           leaf_rotation=90,
+           leaf_font_size=6,
+)
+plt.show()
+
+# Superb! Dendrograms are a great way to illustrate the arrangement of the clusters produced by hierarchical clustering.
+
+EXERCISE
+Hierarchies of stocks
+In chapter 1, you used k-means clustering to cluster companies according to their stock price movements. Now, you'll perform hierarchical clustering of the companies. You are given a NumPy array of price movements movements, where the rows correspond to companies, and a list of the company names companies. SciPy hierarchical clustering doesn't fit into a sklearn pipeline, so you'll need to use the normalize() function from sklearn.preprocessing instead of Normalizer.
+
+linkage and dendrogram have already been imported from sklearn.cluster.hierarchy, and PyPlot has been imported as plt.
+
+INSTRUCTIONS
+100 XP
+Import normalize from sklearn.preprocessing.
+Rescale the price movements for each stock by using the normalize() function on movements.
+Apply the linkage() function to normalized_movements, using 'complete' linkage, to calculate the hierarchical clustering. Assign the result to mergings.
+Plot a dendrogram of the hierarchical clustering, using the list companies of company names as the labels. In addition, specify the leaf_rotation=90, and leaf_font_size=6 keyword arguments as you did in the previous exercise.
+Take Hint (-30 XP)
+
+# Import normalize
+from sklearn.preprocessing import normalize
+
+# Normalize the movements: normalized_movements
+normalized_movements = normalize(movements)
+
+# Calculate the linkage: mergings
+mergings = linkage(normalized_movements, method='complete')
+
+# Plot the dendrogram
+dendrogram(mergings,
+            labels=companies,
+            leaf_rotation=90,
+            leaf_font_size=6)
+plt.show()
+
+# Great work! You can produce great visualizations such as this with hierarchical clustering, but it can be used for more than just visualizations. You'll find out more about this in the next video!
+
+EXERCISE
+Which clusters are closest?
+In the video, you learned that the linkage method defines how the distance between clusters is measured. In complete linkage, the distance between clusters is the distance between the furthest points of the clusters. In single linkage, the distance between clusters is the distance between the closest points of the clusters.
+
+Consider the three clusters in the diagram. Which of the following statements are true?
+
+A. In single linkage, cluster 3 is the closest to cluster 2.
+
+B. In complete linkage, cluster 1 is the closest to cluster 2.
+
+INSTRUCTIONS
+50 XP
+Possible Answers
+Neither A nor B.
+press 1
+A only.
+press 2
+Both A and B.
+press 3
+Take Hint (-15 XP)
+
+Answer #3 - Both A and B.
+# 
 
 
 
