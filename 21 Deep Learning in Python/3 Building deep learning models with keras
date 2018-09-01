@@ -1,0 +1,89 @@
+3 Building deep learning models with keras
+In this chapter, you'll use the keras library to build deep learning models for both regression as well as classification! You'll learn about the Specify-Compile-Fit workflow that you can use to make predictions and by the end of this chapter, you'll have all the tools necessary to build deep neural networks!
+
+Icon exercise video
+Creating a keras model
+50 xp
+Icon exercise mc
+Understanding your data
+50 xp
+Icon exercise interactive
+Specifying a model
+100 xp
+Icon exercise video
+Compiling and fitting a model
+50 xp
+Icon exercise interactive
+Compiling the model
+100 xp
+Icon exercise interactive
+Fitting the model
+100 xp
+Icon exercise video
+Classification models
+50 xp
+Icon exercise mc
+Understanding your classification data
+50 xp
+Icon exercise interactive
+Last steps in classification models
+100 xp
+Icon exercise video
+Using models
+50 xp
+Icon exercise interactive
+Making predictions
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
