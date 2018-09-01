@@ -1,0 +1,61 @@
+1 Basics of deep learning and neural networks
+In this chapter, you'll become familiar with the fundamental concepts and terminology used in deep learning, and understand why deep learning techniques are so powerful today. You'll build simple neural networks yourself and generate predictions with them.
+
+Icon exercise video done
+Introduction to deep learning
+50 xp
+Icon exercise mc
+Comparing neural network models to classical regression models
+50 xp
+Icon exercise video
+Forward propagation
+50 xp
+Icon exercise interactive
+Coding the forward propagation algorithm
+100 xp
+Icon exercise video
+Activation functions
+50 xp
+Icon exercise interactive
+The Rectified Linear Activation Function
+100 xp
+Icon exercise interactive
+Applying the network to many observations/rows of data
+100 xp
+Icon exercise video
+Deeper networks
+50 xp
+Icon exercise mc
+Forward propagation in a deeper network
+50 xp
+Icon exercise interactive
+Multi-layer neural networks
+100 xp
+Icon exercise mc
+Representations are learned
+50 xp
+Icon exercise mc
+Levels of representation
+50 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
