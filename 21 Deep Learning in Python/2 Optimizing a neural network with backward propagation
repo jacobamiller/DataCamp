@@ -214,48 +214,155 @@ print(slope)
 
 # Well done! You can now use this slope to improve the weights of the model!
 
+EXERCISE
+Improving model weights
+Hurray! You've just calculated the slopes you need. Now it's time to use those slopes to improve your model. If you add the slopes to your weights, you will move in the right direction. However, it's possible to move too far in that direction. So you will want to take a small step in that direction first, using a lower learning rate, and verify that the model is improving.
 
+The weights have been pre-loaded as weights, the actual value of the target as target, and the input data as input_data. The predictions from the initial weights are stored as preds.
 
+INSTRUCTIONS
+100 XP
+Set the learning rate to be 0.01 and calculate the error from the original predictions. This has been done for you.
+Calculate the updated weights by subtracting the product of learning_rate and slope from weights.
+Calculate the updated predictions by multiplying weights_updated with input_data and computing their sum.
+Calculate the error for the new predictions. Store the result as error_updated.
+Hit 'Submit Answer' to compare the updated error to the original!
+Take Hint (-30 XP)
 
+# Set the learning rate: learning_rate
+learning_rate = 0.01
 
+# Calculate the predictions: preds
+preds = (weights * input_data).sum()
 
+# Calculate the error: error
+error = preds - target
 
+# Calculate the slope: slope
+slope = 2 * input_data * error
 
+# Update the weights: weights_updated
+weights_updated = weights - (learning_rate * slope)
 
+# Get updated predictions: preds_updated
+preds_updated = (weights_updated * input_data).sum()
 
+# Calculate updated error: error_updated
+error_updated = preds_updated - target
 
+# Print the original error
+print(error)
 
+# Print the updated error
+print(error_updated)
 
+# Fantastic! Updating the model weights did indeed decrease the error!
 
+EXERCISE
+Making multiple updates to weights
+You're now going to make multiple updates so you can dramatically improve your model weights, and see how the predictions improve with each update.
 
+To keep your code clean, there is a pre-loaded get_slope() function that takes input_data, target, and weights as arguments. There is also a get_mse() function that takes the same arguments. The input_data, target, and weights have been pre-loaded.
 
+This network does not have any hidden layers, and it goes directly from the input (with 3 nodes) to an output node. Note that weights is a single array.
 
+We have also pre-loaded matplotlib.pyplot, and the error history will be plotted after you have done your gradient descent steps.
 
+INSTRUCTIONS
+100 XP
+Using a for loop to iteratively update weights:
+Calculate the slope using the get_slope() function.
+Update the weights using a learning rate of 0.01.
+Calculate the mean squared error (mse) with the updated weights using the get_mse() function.
+Append mse to mse_hist.
+Hit 'Submit Answer' to visualize mse_hist. What trend do you notice?
+Take Hint (-30 XP)
 
+n_updates = 20
+mse_hist = []
 
+# Iterate over the number of updates
+for i in range(n_updates):
+    # Calculate the slope: slope
+    slope = get_slope(input_data, target, weights)
+    
+    # Update the weights: weights
+    weights = weights - (0.01 * slope)
+    
+    # Calculate mse with new weights: mse
+    mse = get_mse(input_data, target, weights)
+    
+    # Append the mse to mse_hist
+    mse_hist.append(mse)
 
+# Plot the mse history
+plt.plot(mse_hist)
+plt.xlabel('Iterations')
+plt.ylabel('Mean Squared Error')
+plt.show()
 
+# Great work! As you can see, the mean squared error decreases as the number of iterations go up.
 
+The relationship between forward and backward propagation
+If you have gone through 4 iterations of calculating slopes (using backward propagation) and then updated weights, how many times must you have done forward propagation?
 
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+0.
+press 1
+1.
+press 2
+4.
+press 3
+8.
+press 4
+Take Hint (-15 XP)
 
+Answer #3 - 4 iterations
+# Exactly! Each time you generate predictions using forward propagation, you update the weights using backward propagation.
 
+Thinking about backward propagation
+If your predictions were all exactly right, and your errors were all exactly 0, the slope of the loss function with respect to your predictions would also be 0. In that circumstance, which of the following statements would be correct?
 
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+The updates to all weights in the network would also be 0.
+press 1
+The updates to all weights in the network would be dependent on the activation functions.
+press 2
+The updates to all weights in the network would be proportional to values from the input data.
+press 3
+Take Hint (-15 XP)
 
+Answer #1 - The updates to all weights in the network would also be 0.
+# Correct! In this situation, the updates to all weights in the network would indeed also be 0.
 
+A round of backpropagation
+In the network shown below, we have done forward propagation, and node values calculated as part of forward propagation are shown in white. The weights are shown in black. Layers after the question mark show the slopes calculated as part of back-prop, rather than the forward-prop values. Those slope values are shown in purple.
 
+This network again uses the ReLU activation function, so the slope of the activation function is 1 for any node receiving a positive value as input. Assume the node being examined had a positive value (so the activation function's slope is 1).
 
+Ch2Ex14_1
 
+What is the slope needed to update the weight with the question mark?
 
+Ch2Ex14_2
 
+ANSWER THE QUESTION
+50 XP
+Possible Answers
+0.
+press 1
+2.
+press 2
+6.
+press 3
+Not enough information.
+press 4
+Take Hint (-15 XP)
 
-
-
-
-
-
-
-
-
-
-
+Answer #3 - Slope of 6 
+# Well done! The slope needed to update this weight is indeed 6. You're now ready to start building deep learning models with keras!
 
