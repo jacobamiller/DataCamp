@@ -1,0 +1,81 @@
+1 Introduction to networks
+In this chapter, you'll be introduced to fundamental concepts in network analytics while becoming acquainted with a real-world Twitter network dataset that you will explore throughout the course. In addition, you'll learn about NetworkX, a library that allows you to manipulate, analyze, and model graph data. You'll learn about different types of graphs as well as how to rationally visualize them.
+
+Icon exercise video
+Introduction to networks
+50 xp
+Icon exercise mc
+What is a network?
+50 xp
+Icon exercise mc
+Basics of NetworkX API, using Twitter network
+50 xp
+Icon exercise interactive
+Basic drawing of a network using NetworkX
+100 xp
+Icon exercise interactive
+Queries on a graph
+100 xp
+Icon exercise video
+Types of graphs
+50 xp
+Icon exercise mc
+Checking the un/directed status of a graph
+50 xp
+Icon exercise interactive
+Specifying a weight on edges
+100 xp
+Icon exercise interactive
+Checking whether there are self-loops in the graph
+100 xp
+Icon exercise video
+Network visualization
+50 xp
+Icon exercise interactive
+Visualizing using Matrix plots
+100 xp
+Icon exercise interactive
+Visualizing using Circos plots
+100 xp
+Icon exercise interactive
+Visualizing using Arc plots
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
