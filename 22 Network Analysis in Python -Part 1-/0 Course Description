@@ -1,0 +1,178 @@
+0 Course Description
+From online social networks such as Facebook and Twitter to transportation networks such as bike sharing systems, networks are everywhere, and knowing how to analyze this type of data will open up a new world of possibilities for you as a Data Scientist. This course will equip you with the skills to analyze, visualize, and make sense of networks. You'll apply the concepts you learn to real-world network data using the powerful NetworkX library. With the knowledge gained in this course, you'll develop your network thinking skills and be able to start looking at your data with a fresh perspective!
+
+1 Introduction to networks
+In this chapter, you'll be introduced to fundamental concepts in network analytics while becoming acquainted with a real-world Twitter network dataset that you will explore throughout the course. In addition, you'll learn about NetworkX, a library that allows you to manipulate, analyze, and model graph data. You'll learn about different types of graphs as well as how to rationally visualize them.
+
+Icon exercise video
+Introduction to networks
+50 xp
+Icon exercise mc
+What is a network?
+50 xp
+Icon exercise mc
+Basics of NetworkX API, using Twitter network
+50 xp
+Icon exercise interactive
+Basic drawing of a network using NetworkX
+100 xp
+Icon exercise interactive
+Queries on a graph
+100 xp
+Icon exercise video
+Types of graphs
+50 xp
+Icon exercise mc
+Checking the un/directed status of a graph
+50 xp
+Icon exercise interactive
+Specifying a weight on edges
+100 xp
+Icon exercise interactive
+Checking whether there are self-loops in the graph
+100 xp
+Icon exercise video
+Network visualization
+50 xp
+Icon exercise interactive
+Visualizing using Matrix plots
+100 xp
+Icon exercise interactive
+Visualizing using Circos plots
+100 xp
+Icon exercise interactive
+Visualizing using Arc plots
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+2 Important nodes
+Here, you'll learn about ways of identifying nodes that are important in a network. In doing so, you'll be introduced to more advanced concepts in network analysis as well as learn the basics of path-finding algorithms. The chapter concludes with a deep dive into the Twitter network dataset which will reinforce the concepts you've learned, such as degree centrality and betweenness centrality.
+
+Icon exercise video
+Degree centrality
+50 xp
+Icon exercise interactive
+Compute number of neighbors for each node
+100 xp
+Icon exercise interactive
+Compute degree distribution
+100 xp
+Icon exercise interactive
+Degree centrality distribution
+100 xp
+Icon exercise video
+Graph algorithms
+50 xp
+Icon exercise interactive
+Shortest Path I
+100 xp
+Icon exercise interactive
+Shortest Path II
+100 xp
+Icon exercise interactive
+Shortest Path III
+100 xp
+Icon exercise video
+Betweenness centrality
+50 xp
+Icon exercise interactive
+NetworkX betweenness centrality on a social network
+100 xp
+Icon exercise interactive
+Deep dive - Twitter network
+100 xp
+Icon exercise interactive
+Deep dive - Twitter network part II
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+3 Structures
+This chapter is all about finding interesting structures within network data. You'll learn about essential concepts such as cliques, communities, and subgraphs, which will leverage all of the skills you acquired in Chapter 2. By the end of this chapter, you'll be ready to apply the concepts you've learned to a real-world case study.
+
+Icon exercise video
+Cliques & communities
+50 xp
+Icon exercise interactive
+Identifying triangle relationships
+100 xp
+Icon exercise interactive
+Finding nodes involved in triangles
+100 xp
+Icon exercise interactive
+Finding open triangles
+100 xp
+Icon exercise video
+Maximal cliques
+50 xp
+Icon exercise interactive
+Finding all maximal cliques of size "n"
+100 xp
+Icon exercise video
+Subgraphs
+50 xp
+Icon exercise interactive
+Subgraphs I
+100 xp
+Icon exercise interactive
+Subgraphs II
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+4 Bringing it all together
+In this final chapter of the course, you'll consolidate everything you've learned by diving into an in-depth case study of GitHub collaborator network data. This is a great example of real-world social network data, and your newly acquired skills will be fully tested. By the end of this chapter, you'll have developed your very own recommendation system which suggests GitHub users who should collaborate together. Enjoy!
+
+Icon exercise video
+Case study!
+50 xp
+Icon exercise mc
+Characterizing the network (I)
+50 xp
+Icon exercise interactive
+Characterizing the network (II)
+100 xp
+Icon exercise interactive
+Characterizing the network (III)
+100 xp
+Icon exercise video
+Case study part II: Visualization
+50 xp
+Icon exercise interactive
+MatrixPlot
+100 xp
+Icon exercise interactive
+ArcPlot
+100 xp
+Icon exercise interactive
+CircosPlot
+100 xp
+Icon exercise video
+Case study part III: Cliques
+50 xp
+Icon exercise interactive
+Finding cliques (I)
+100 xp
+Icon exercise interactive
+Finding cliques (II)
+100 xp
+Icon exercise video
+Case study part IV: Final tasks
+50 xp
+Icon exercise interactive
+Finding important collaborators
+100 xp
+Icon exercise interactive
+Characterizing editing communities
+100 xp
+Icon exercise interactive
+Recommending co-editors who have yet to edit together
+100 xp
+Icon exercise video
+Final thoughts
+50 xp
+HIDE CHAPTER DETAILS
