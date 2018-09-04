@@ -1,0 +1,80 @@
+2 Important nodes
+Here, you'll learn about ways of identifying nodes that are important in a network. In doing so, you'll be introduced to more advanced concepts in network analysis as well as learn the basics of path-finding algorithms. The chapter concludes with a deep dive into the Twitter network dataset which will reinforce the concepts you've learned, such as degree centrality and betweenness centrality.
+
+Icon exercise video
+Degree centrality
+50 xp
+Icon exercise interactive
+Compute number of neighbors for each node
+100 xp
+Icon exercise interactive
+Compute degree distribution
+100 xp
+Icon exercise interactive
+Degree centrality distribution
+100 xp
+Icon exercise video
+Graph algorithms
+50 xp
+Icon exercise interactive
+Shortest Path I
+100 xp
+Icon exercise interactive
+Shortest Path II
+100 xp
+Icon exercise interactive
+Shortest Path III
+100 xp
+Icon exercise video
+Betweenness centrality
+50 xp
+Icon exercise interactive
+NetworkX betweenness centrality on a social network
+100 xp
+Icon exercise interactive
+Deep dive - Twitter network
+100 xp
+Icon exercise interactive
+Deep dive - Twitter network part II
+100 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
