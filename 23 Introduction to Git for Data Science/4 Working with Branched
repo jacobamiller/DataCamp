@@ -1,0 +1,72 @@
+4 Working with branches
+Branching is one of Git's most powerful features, since it allows you to work on several things at once without tripping over yourself. This chapter shows you how to create and manage branches.
+
+Icon exercise mc
+What is a branch?
+50 xp
+Icon exercise mc
+How can I see what branches my repository has?
+50 xp
+Icon exercise mc
+How can I view the differences between branches?
+50 xp
+Icon exercise interactive
+How can I switch from one branch to another?
+60 xp
+Icon exercise interactive
+How can I create a branch?
+40 xp
+Icon exercise interactive
+How can I merge two branches?
+10 xp
+Icon exercise mc
+What are conflicts?
+50 xp
+Icon exercise interactive
+How can I merge two branches with conflicts?
+50 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
