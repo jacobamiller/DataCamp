@@ -1,0 +1,99 @@
+1 Basic workflow
+This chapter explains what version control is and why you should use it, and introduces the most common steps in a common Git workflow.
+
+Icon exercise mc
+What is version control?
+50 xp
+Icon exercise mc
+Where does Git store information?
+50 xp
+Icon exercise mc
+How can I check the state of a repository?
+50 xp
+Icon exercise interactive
+How can I tell what I have changed?
+10 xp
+Icon exercise mc
+What is in a diff?
+50 xp
+Icon exercise interactive
+What's the first step in saving changes?
+20 xp
+Icon exercise interactive
+How can I tell what's going to be committed?
+30 xp
+Icon exercise interactive
+Interlude: how can I edit a file?
+100 xp
+Icon exercise interactive
+How do I commit changes?
+20 xp
+Icon exercise mc
+How can I view a repository's history?
+50 xp
+Icon exercise mc
+How can I view a specific file's history?
+50 xp
+Icon exercise interactive
+How do I write a better log message?
+10 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
