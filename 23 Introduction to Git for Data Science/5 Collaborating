@@ -1,0 +1,74 @@
+5 Collaborating
+This chapter shows Git's other greatest feature: how you can share changes between repositories to collaborate at scale.
+
+Icon exercise interactive
+How can I create a brand new repository?
+100 xp
+Icon exercise interactive
+How can I turn an existing project into a Git repository?
+20 xp
+Icon exercise interactive
+How can I create a copy of an existing repository?
+10 xp
+Icon exercise mc
+How can I find out where a cloned repository originated?
+50 xp
+Icon exercise interactive
+How can I define remotes?
+10 xp
+Icon exercise interactive
+How can I pull in changes from a remote repository?
+10 xp
+Icon exercise interactive
+What happens if I try to pull when I have unsaved changes?
+30 xp
+Icon exercise interactive
+How can I push my changes to a remote repository?
+30 xp
+Icon exercise interactive
+What happens if my push conflicts with someone else's work?
+30 xp
+HIDE CHAPTER DETAILS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
