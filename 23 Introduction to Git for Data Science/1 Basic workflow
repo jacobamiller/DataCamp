@@ -184,55 +184,192 @@ $
 
 
 
+EXERCISE
+What's the first step in saving changes?
+You commit changes to a Git repository in two steps:
+
+Add one or more files to the staging area.
+Commit everything in the staging area.
+To add a file to the staging area, use git add filename.
+
+INSTRUCTIONS 
+You have been put in the dental repository. Use git add to add the file report.txt to the staging area.
+
+Use another Git command to check the repository's status.
+
+$ cd dental
+$ git add report.txt
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+EXERCISE
+How can I tell what's going to be committed?
+To compare a file's current state to the changes in the staging area, you can use git diff -r HEAD path/to/file. The -r flag means "compare to a particular revision", HEAD is a shortcut meaning "the most recent commit", and the path to the file is the relative to where you are (for example, the path from the root directory of the repository). We will explore other uses of -r and HEAD in the next chapter.
+
+INSTRUCTIONS
+You have been put in the dental repository, and data/northern.csv has been added to the staging area. Use git diff with -r and an argument to see how files differ from the last saved revision.
+
+Use a single Git command to view the changes in the file that has been staged (and only that file).
+
+Use one Git command to add the other changed file to the staging area.
+
+$ cd dental
+$ git add data/northern.csv   # <---- Answer #1
+$ git diff -r HEAD
+diff --git a/data/eastern.csv b/data/eastern.csv
+index b3c1688..85053c3 100644
+--- a/data/eastern.csv
++++ b/data/eastern.csv
+@@ -23,3 +23,4 @@ Date,Tooth
+ 2017-08-02,canine
+ 2017-08-03,bicuspid
+ 2017-08-04,canine
++2017-11-02,molar
+diff --git a/data/northern.csv b/data/northern.csv
+index 5eb7a96..5a2a259 100644
+--- a/data/northern.csv
++++ b/data/northern.csv
+@@ -22,3 +22,4 @@ Date,Tooth
+ 2017-08-13,incisor
+ 2017-08-13,wisdom
+ 2017-09-07,molar
++2017-11-01,bicuspid
+$ $ git diff -r HEAD data/northern.csv  # <---- Answer #2
+diff --git a/data/northern.csv b/data/northern.csv
+index 5eb7a96..5a2a259 100644
+--- a/data/northern.csv
++++ b/data/northern.csv
+@@ -22,3 +22,4 @@ Date,Tooth
+ 2017-08-13,incisor
+ 2017-08-13,wisdom
+ 2017-09-07,molar
++2017-11-01,bicuspid
+$ git add data/eastern.csv  # <---- Answer #3
+$
+
+Exercise
+Interlude: how can I edit a file?
+Unix has a bewildering variety of text editors. In this course, we will sometimes use a very simple one called Nano. If you type nano filename, it will open filename for editing (or create it if it doesn't already exist). You can then move around with the arrow keys, delete characters with the backspace key, and so on. You can also do a few other operations with control-key combinations:
+
+Ctrl-K: delete a line.
+Ctrl-U: un-delete a line.
+Ctrl-O: save the file ('O' stands for 'output').
+Ctrl-X: exit the editor.
+*** =instructions
+
+Run nano names.txt to edit a new file in your home directory and enter the following four lines:
+
+Lovelace
+Hopper
+Johnson
+Wilson
+
+To save what you have written, type Ctrl-O to write the file out, then Enter to confirm the filename, then Ctrl-X and Enter to exit the editor.
+
+*** =solution
+echo nano names.txt
 
 
 
+Exercise
+How do I commit changes?
+To save the changes in the staging area, you use the command git commit. It always saves everything that is in the staging area as one unit: as you will see later, when you want to undo changes to a project, you undo all of a commit or none of it.
+
+When you commit changes, Git requires you to enter a log message. This serves the same purpose as a comment in a program: it tells the next person to examine the repository why you made a change.
+
+By default, Git launches a text editor to let you write this message. To keep things simple, you can use -m "some message in quotes" on the command line to enter a single-line message like this:
+
+git commit -m "Program appears to have become self-aware."
+
+*** =instructions1
+You have been put in the dental repository, and report.txt has been added to the staging area. Use one Git command to check the status of the repository.
+
+*** =solution1
+git status
+
+*** =solution2
+git commit -m "Adding a reference."
+
+EXERCISE
+How can I view a repository's history?
+The command git log is used to view the log of the project's history. Log entries are shown most recent first, and look like this:
+
+commit 0430705487381195993bac9c21512ccfb511056d
+Author: Rep Loop <repl@datacamp.com>
+Date:   Wed Sep 20 13:42:26 2017 +0000
+
+    Added year to report title.
+The commit line displays a unique ID for the commit called a hash; we will explore these further in the next chapter. The other lines tell you who made the change, when, and what log message they wrote for the change.
+
+When you run git log, Git automatically uses a pager to show one screen of output at a time. Press the space bar to go down a page or the 'q' key to quit.
+
+You are in the directory dental, which is a Git repository. Use a single Git command to view the repository's history. What is the message on the very first entry in the log (which is displayed last)?
+
+INSTRUCTIONS
+50 XP
+Possible Answers
+"Added summary report file."
+press 1
+"Added seasonal CSV data files"
+press 2
+"Fixed bug and regenerated results."
+press 3
+"Added reminder to cite funding sources."
+press 4
+Take Hint (-15 XP)
+
+Answer #1 - "Added summary report file." -- Use the space bar to page down through the log and 'q' to quit.
 
 
 
+EXERCISE
+EXERCISE
+How can I view a specific file's history?
+A project's entire log can be overwhelming, so it's often useful to inspect only the changes to particular files or directories. You can do this using git log path, where path is the path to a specific file or directory. The log for a file shows changes made to that file; the log for a directory shows when files were added or deleted in that directory, rather than when the contents of the directory's files were changed.
 
+You have been put in the dental repository. Use git log to display only the changes made to data/southern.csv. How many have there been?
 
+INSTRUCTIONS
+50 XP
+Possible Answers
+0.
+press 1
+1.
+press 2
+2.
+press 3
+3.
+press 4
+Take Hint (-15 XP)
 
+Answer #3 - 2 changes - git log data/southern.csv
 
+EXERCISE
+How do I write a better log message?
+Writing a one-line log message with git commit -m "message"is good enough for very small changes, but your collaborators (including your future self) will appreciate more information. If you run git commit without -m "message", Git launches a text editor with a template like this:
 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#       modified:   skynet.R
+#
+The lines starting with # are comments, and won't be saved. (They are there to remind you what you are supposed to do and what files you have changed.) Your message should go at the top, and may be as long and as detailed as you want.
 
+INSTRUCTIONS 1/1
+10 XP
+You have been put in the dental repository, and report.txt has been added to the staging area. The changes to report.txt have already been staged. Use git commit without -m to commit the changes.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$ cd dental
+$ git add report.txt
+$ git commit -m "Adding a reference."  # <---- Answer 
+[master bc3a266] Adding a reference.
+ 1 file changed, 3 insertions(+)
+$ ^C
+$
 
 
