@@ -37,28 +37,3 @@ If some tests fail, your task circle with turn orange. You can view the test res
 If you are unable to complete the task after repeated attempts, you can use the sidebar to ask for a hint.
 The project is complete when you have successfully completed all tasks. At this point all the task circles will turn green!
 
-
-
-# Used to change filepaths
-from pathlib import Path
-
-# We set up matplotlib, pandas, and the display function
-%matplotlib inline
-import matplotlib.pyplot as plt
-from IPython.display import display
-import pandas as pd
-
-# import numpy to use in this cell
-# ... YOUR CODE FOR TASK 1 ...
-import numpy as np
-
-# import Image from PIL so we can use it later
-# ... YOUR CODE FOR TASK 1 ...
-from PIL import Image
-
-# generate test_data
-# ... YOUR CODE FOR TASK 1 ...
-test_data = np.random.beta((a,b) * (100, 100, 3))
-
-# display the test_data
-# ... YOUR CODE FOR TASK 1 ...
