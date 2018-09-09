@@ -1,0 +1,19 @@
+Task 2: Instructions
+Load an image to introduce you to PIL.
+
+Assign the variable img to an Image loaded with the open method. The path is 'datasets/bee_1.jpg'.
+Assign the variable img_size to the size property of the img that you opened.
+
+-------------------------------------------------------------
+
+# open the image
+img = Image.open('datasets/bee_1.jpg')
+
+# Get the image size
+img_size = img.size
+
+
+print("The image size is: {}".format(img_size))
+
+# Just having the image as the last line in the cell will display it in the notebook
+img
