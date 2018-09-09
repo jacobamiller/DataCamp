@@ -1,3 +1,19 @@
+Task 1: Instructions
+First, we need to import the Python libraries with which we will work.
+
+Import numpy as np.
+Import the class Image from the library PIL.
+Create a numpy array called test_data that is a random array drawn from the beta distribution. The size should be (100, 100, 3) and the a and b parameters should both be 1. The distribution is in np.random.beta.
+Call plt.imshow on the test data. You should see some colorful looking random noise!
+Good to know
+Welcome to the first project in a series on working with image data. We will be working through a Driven Data Competition to identify Honey Bees and Bumble Bees given an image of these insects! To learn more about the background, you can explore the competition page.
+
+For this project, the documentation for Pillow, matplotlib, and numpy will be helpful resources! For more information about bees, see the BeeSpotter project or the DrivenData competition.
+
+The recommended prerequisites for this Project are Intermediate Python for Data Science and Introduction to Data Visualization with Python.
+
+----------------------------------------------------------
+
 # Used to change filepaths
 from pathlib import Path
 
