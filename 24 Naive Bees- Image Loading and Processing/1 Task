@@ -1,0 +1,24 @@
+# Used to change filepaths
+from pathlib import Path
+
+# We set up matplotlib, pandas, and the display function
+%matplotlib inline
+import matplotlib.pyplot as plt
+from IPython.display import display
+import pandas as pd
+
+# import numpy to use in this cell
+# ... YOUR CODE FOR TASK 1 ...
+import numpy as np
+
+# import Image from PIL so we can use it later
+# ... YOUR CODE FOR TASK 1 ...
+from PIL import Image
+
+# generate test_data
+# ... YOUR CODE FOR TASK 1 ...
+test_data = np.random.beta(1, 1, size=(100, 100, 3))
+
+# display the test_data
+# ... YOUR CODE FOR TASK 1 ...
+plt.imshow(test_data)
