@@ -20,3 +20,45 @@ Project Tasks
 8  Simplify, simplify, simplify
 9  Save your work!
 10 Make a pipeline
+
+How it works
+The project interface consists of a jupyter notebook on the right with the narrative and code, and a sidebar on the left with detailed instructions, hints and tests. Every project is broken down into smaller tasks.
+Completing Tasks
+In order to complete a task, you will need to:
+
+Read the narrative in the notebook to understand the scope of the task.
+Read the instructions in the sidebar to get more details on what is expected.
+Write code in the notebook and run it by by pressing Shift + Enter, or clicking on the Run icon in the toolbar.
+Checking Project
+At any point in the project, you can click on the Check Project button at the bottom to test whether your output matches the solution.
+
+If all the tests pass, your task circle will turn green.
+If some tests fail, your task circle with turn orange. You can view the test results in the sidebar to understand what failed and update your code accordingly.
+If you are unable to complete the task after repeated attempts, you can use the sidebar to ask for a hint.
+The project is complete when you have successfully completed all tasks. At this point all the task circles will turn green!
+
+
+
+# Used to change filepaths
+from pathlib import Path
+
+# We set up matplotlib, pandas, and the display function
+%matplotlib inline
+import matplotlib.pyplot as plt
+from IPython.display import display
+import pandas as pd
+
+# import numpy to use in this cell
+# ... YOUR CODE FOR TASK 1 ...
+import numpy as np
+
+# import Image from PIL so we can use it later
+# ... YOUR CODE FOR TASK 1 ...
+from PIL import Image
+
+# generate test_data
+# ... YOUR CODE FOR TASK 1 ...
+test_data = np.random.beta((a,b) * (100, 100, 3))
+
+# display the test_data
+# ... YOUR CODE FOR TASK 1 ...
