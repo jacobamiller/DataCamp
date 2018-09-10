@@ -1,0 +1,36 @@
+Task 8 
+
+Task 8: Instructions
+Now we'll convert the image to grayscale and explore the results of this transformation.
+
+Assign the variable honey_bw to the result of using the convert method on honey with the parameter "L".
+Assign honey_bw_arr to the result of converting honey_bw to a NumPy array.
+Assign honey_bw_arr_shape to the shape of honey_bw_arr.
+Plot the NumPy array version using plt.imshow and plot the kde of the new single-channel NumPy array version with plot_kde.
+
+8. Simplify, simplify, simplify
+While sometimes color information is useful, other times it can be distracting. In this examples where we are looking at bees, the bees themselves are very similar colors. On the other hand, the bees are often on top of different color flowers. We know that the colors of the flowers may be distracting from separating honey bees from bumble bees, so let's convert these images to black-and-white, or "grayscale."
+
+Grayscale is just one of the modes that Pillow supports. Switching between modes is done with the .convert() method, which is passed a string for the new mode.
+
+Because we change the number of color "channels," the shape of our array changes with this change. It also will be interesting to look at how the KDE of the grayscale version compares to the RGB version above.
+
+
+# convert honey to grayscale
+honey_bw = honey.convert('L')
+display(honey_bw)
+​
+# convert the image to a NumPy array
+honey_bw_arr = np.array(honey_bw)
+​
+# get the shape of the resulting array
+honey_bw_arr_shape = honey_bw_arr.shape
+print("Our NumPy array has the shape: {}".format(honey_bw_arr_shape))
+​
+# plot the array using matplotlib
+plt.imshow(honey_bw_arr, cmap=plt.cm.gray)
+plt.show()
+​
+# plot the kde of the new black and white array
+plot_kde(honey_bw_arr, 'k')
+
