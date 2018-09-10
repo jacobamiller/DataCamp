@@ -1,0 +1,34 @@
+3 Task
+
+Task 3: Instructions
+We'll try some of the transformation methods available in Pillow and look at the results.
+
+Assign img_cropped to the image cropped with the crop method to the bounding box 25, 25, 75, 75.
+Assign img_rotated to the image rotated by 45 degrees and expanded by 25 pixels with the rotate method.
+Assign img_flipped to the image flipped left-to-right with the transpose method and the Image.FLIP_LEFT_RIGHT transposition.
+crop, rotate, and transpose are all methods on our existing img variable.
+
+3. Image manipulation with PIL
+Pillow has a number of common image manipulation tasks built into the library. For example, one may want to resize an image so that the file size is smaller. Or, perhaps, convert an image to black-and-white instead of color. Operations that Pillow provides include:
+
+resizing
+cropping
+rotating
+flipping
+converting to greyscale (or other color modes)
+Often, these kinds of manipulations are part of the pipeline for turning a small number of images into more images to create training data for machine learning algorithms. This technique is called data augmentation, and it is a common technique for image classification.
+
+We'll try a couple of these operations and look at the results.
+
+
+# Crop the image to 25, 25, 75, 75
+img_cropped = img.crop((25, 25, 75, 75))
+display(img_cropped)
+​
+# rotate the image by 45 degrees
+img_rotated = img.rotate(45, expand=25 )
+display(img_rotated)
+​
+# flip the image left to right
+img_flipped = img.transpose(Image.FLIP_LEFT_RIGHT)
+display(img_flipped)
