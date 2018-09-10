@@ -1,0 +1,45 @@
+4 Task
+
+Task 4: Instructions
+Now we'll get the image as a NumPy array, and with that data, we'll use matplotlib to display the image.
+
+Assign img_data to the result of calling np.array on our Image object.
+Assign img_data_shape equal to the shape of img_data, which should be a NumPy array.
+Plot the NumPy array using matplotlib's imshow function.
+Plot each of the color channels, red, green, and blue by accessing them in the last dimension of the NumPy array.
+Completing this task shows us that at the end of the day, our images are just arrays of numbers.
+
+4. Images as arrays of data
+What is an image? So far, PIL has handled loading images and displaying them. However, if we're going to use images as data, we need to understand what that data looks like.
+
+Most image formats have three color "channels": red, green, and blue (some images also have a fourth channel called "alpha" that controls transparency). For each pixel in an image, there is a value for every channel.
+
+RGB Colors
+
+The way this is represented as data is as a three-dimensional matrix. The width of the matrix is the width of the image, the height of the matrix is the height of the image, and the depth of the matrix is the number of channels. So, as we saw, the height and width of our image are both 100 pixels. This means that the underlying data is a matrix with the dimensions 100x100x3.
+
+
+# Turn our image object into a NumPy array
+img_data = np.array(img)
+​
+# get the shape of the resulting array
+img_data_shape = img_data.shape
+​
+print("Our NumPy array has the shape: {}".format(img_data_shape))
+​
+# plot the data with `imshow` 
+# ... YOUR CODE FOR TASK 4 ...
+plt.show()
+​
+# plot the red channel
+plt.imshow(img_data[:, :, 0], cmap=plt.cm.Reds_r)
+plt.show()
+​
+# plot the green channel
+plt.imshow(img_data[:, :, 1], cmap=plt.cm.Greens_r)
+plt.show()
+​
+# plot the blue channel
+plt.imshow(img_data[:, :, 2], cmap=plt.cm.Blues_r)
+plt.show()
+
