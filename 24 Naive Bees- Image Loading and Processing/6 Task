@@ -1,0 +1,28 @@
+6 Task
+
+Task 6: Instructions
+Now we'll load the honey bee image and inspect its colors with a plot.
+
+Use PIL's Image.open method to assign honey to the image at the path 'datasets/bee_12.jpg'.
+Display the honey image.
+For honey, create a NumPy array of the data and assign it to honey_data.
+Plot the channels in honey_data with plot_rgb.
+
+6. Honey bees and bumble bees (i)
+Now we'll look at two different images and some of the differences between them. The first image is of a honey bee, and the second image is of a bumble bee.
+
+First, let's look at the honey bee.
+
+
+# load bee_12.jpg as honey
+# ... YOUR CODE FOR TASK 6 ...
+honey = Image.open('datasets/bee_12.jpg')
+# display the honey bee image
+display(honey)
+​
+# NumPy array of the honey bee image data
+# ... YOUR CODE FOR TASK 6 ...
+honey_data = np.array(honey)
+# plot the rgb densities for the honey bee image
+plot_rgb(honey_data)
+
