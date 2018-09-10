@@ -1,0 +1,50 @@
+9 Task
+
+Task 9: Instructions
+Now we'll look at saving images so we can store the changes we have made.
+
+Assign honey_bw_flip to the result of transposing the image left-right.
+Call the save function on honey_bw_flip to save it to the path "saved_images/bw_flipped.jpg".
+Assign honey_hc_arr to the result of calling np.maximum passing our black and white array honey_bw_arr and the cutoff value, 100.
+Convert honey_hc_arr back to an Image object using Image.fromarray, and call that honey_bw_hc and save to the path "saved_images/bw_hc.jpg".
+
+9. Save your work!
+We've been talking this whole time about making changes to images and the manipulations that might be useful as part of a machine learning pipeline. To use these images in the future, we'll have to save our work after we've made changes.
+
+Now, we'll make a couple changes to the Image object from Pillow and save that. We'll flip the image left-to-right, just as we did with the color version. Then, we'll change the NumPy version of the data by clipping it. Using the np.maximum function, we can take any number in the array smaller than 100 and replace it with 100. Because this reduces the range of values, it will increase the contrast of the image. We'll then convert that back to an Image and save the result.
+
+
+saved_images/bw_flipped.jpg")
+# create higher contrast by reducing range
+# ... YOUR CODE FOR TASK 9 ...
+honey_hc_arr = np.maximum(honey_bw_arr, 100)
+# show the higher contrast version
+plt.imshow(honey_hc_arr, cmap=plt.cm.gray)
+
+# convert the NumPy array of high contrast to an Image
+# ... YOUR CODE FOR TASK 9 ...
+honey_bw_hc = Image.fromarray(honey_hc_arr)
+# save the high contrast version
+# ... YOUR CODE FOR TASK 9 ...
+honey_bw_hc.save("saved_images/bw_hc.jpg")
+# flip the image left-right with transpose
+# ... YOUR CODE FOR TASK 9 ...
+honey_bw_flip = honey_bw.transpose(Image.FLIP_LEFT_RIGHT)
+# show the flipped image
+display(honey_bw_flip)
+​
+# save the flipped image
+# ... YOUR CODE FOR TASK 9 ...
+honey_bw_flip.save("saved_images/bw_flipped.jpg")
+# create higher contrast by reducing range
+# ... YOUR CODE FOR TASK 9 ...
+honey_hc_arr = np.maximum(honey_bw_arr, 100)
+# show the higher contrast version
+plt.imshow(honey_hc_arr, cmap=plt.cm.gray)
+​
+# convert the NumPy array of high contrast to an Image
+# ... YOUR CODE FOR TASK 9 ...
+honey_bw_hc = Image.fromarray(honey_hc_arr)
+# save the high contrast version
+# ... YOUR CODE FOR TASK 9 ...
+honey_bw_hc.save("saved_images/bw_hc.jpg")
