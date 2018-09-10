@@ -1,0 +1,53 @@
+5 task
+
+Task 5: Instructions
+Create a kernel density estimate (KDE) plot for each of the color channels on the same plot.
+
+Assign channels to a list of strings that contains the first letter of each color channel ('r', 'g', and 'b').
+In the loop that uses enumerate, again use the [:, :, ix] selection to take one channel from our img_data.
+Pass that data as to plot_kde along the color variable.
+With the KDE plot, we can understand how the color channels in the image differ. We'll want to create our plots in a for-loop for every color. Once this is done, we can call the plot_kde function that is provided. We'll do this inside a function called plot_rgb so that we can use it again later.
+
+5. Explore the color channels
+Color channels can help provide more information about an image. A picture of the ocean will be more blue, whereas a picture of a field will be more green. This kind of information can be useful when building models or examining the differences between images.
+
+We'll look at the kernel density estimate for each of the color channels on the same plot so that we can understand how they differ.
+
+When we make this plot, we'll see that a shape that appears further to the right means more of that color, whereas further to the left means less of that color.
+
+
+a = channel.flatten()
+    return pd.Series(data).plot.density(c=color)
+
+# create the list of channels
+channels = ['r', 'g', 'b']
+    
+def plot_rgb(image_data):
+    # use enumerate to loop over colors and indexes
+    for ix, color in enumerate(channels):
+        # ... YOUR CODE FOR TASK 5 ...
+        plot_kde(img_data[:, :, ix], color)
+    plt.show()
+    
+plot_rgb(img_data)
+def plot_kde(channel, color):
+    """ Plots a kernel density estimate for the given data.
+        
+        `channel` must be a 2d array
+        `color` must be a color string, e.g. 'r', 'g', or 'b'
+    """
+    data = channel.flatten()
+    return pd.Series(data).plot.density(c=color)
+​
+# create the list of channels
+channels = ['r', 'g', 'b']
+    
+def plot_rgb(image_data):
+    # use enumerate to loop over colors and indexes
+    for ix, color in enumerate(channels):
+        # ... YOUR CODE FOR TASK 5 ...
+        plot_kde(img_data[:, :, ix], color)
+    plt.show()
+    
+plot_rgb(img_data)
+
