@@ -1,0 +1,37 @@
+Task 7: Instructions
+Now we'll load the bumble bee image and inspect its colors with a plot.
+
+Use PIL's Image.open method to assign bumble to the image at the path 'datasets/bee_3.jpg'.
+Display the bumble image.
+For bumble, create a NumPy array of the data and assign it to bumble_data.
+Plot the channels in bumble_data with plot_rgb.
+
+7. Honey bees and bumble bees (ii)
+Now let's look at the bumble bee.
+
+When one compares these images, it is clear how different the colors are. The honey bee image above, with a blue flower, has a strong peak on the right-hand side of the blue channel. The bumble bee image, which has a lot of yellow for the bee and the background, has almost perfect overlap between the red and green channels (which together make yellow).
+
+
+# load bee_3.jpg as bumble
+# ... YOUR CODE FOR TASK 7 ...
+bumble = Image.open('datasets/bee_3.jpg')
+# display the bumble bee image
+display(bumble)
+
+# NumPy array of the bumble bee image data
+# ... YOUR CODE FOR TASK 7 ...
+bumble_data = np.array(bumble)
+# plot the rgb densities for the bumble bee image
+plot_rgb(bumble_data)
+# load bee_3.jpg as bumble
+# ... YOUR CODE FOR TASK 7 ...
+bumble = Image.open('datasets/bee_3.jpg')
+# display the bumble bee image
+display(bumble)
+​
+# NumPy array of the bumble bee image data
+# ... YOUR CODE FOR TASK 7 ...
+bumble_data = np.array(bumble)
+# plot the rgb densities for the bumble bee image
+plot_rgb(bumble_data)
+
