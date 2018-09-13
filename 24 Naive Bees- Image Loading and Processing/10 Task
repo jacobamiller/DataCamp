@@ -1,0 +1,44 @@
+10 Task
+
+Task 10: Instructions
+Fill out the pipeline that we can use to process our images.
+
+Convert the loaded image, img, to grayscale with the convert function and call that bw.
+Save bw to the path bw_path with the .save() function.
+Chain together the commands .rotate().crop().resize() and call that rcz. Rotate the image 45 degrees (no need to expand as above). Crop the image with the same box as earlier. Resize the image to (100, 100).
+Save rcz to the path rcz_path with the .save() function.
+Excellent work on making it to the end of the Project. You're ready to go, so let's get to work!
+
+10. Make a pipeline
+Now it's time to create an image processing pipeline. We have all the tools in our toolbox to load images, transform them, and save the results.
+
+In this pipeline we will do the following:
+
+Load the image with Image.open and create paths to save our images to
+Convert the image to grayscale
+Save the grayscale image
+Rotate, crop, and zoom in on the image and save the new image
+
+rcz_path
+image_paths = ['datasets/bee_1.jpg', 'datasets/bee_12.jpg', 'datasets/bee_2.jpg', 'datasets/bee_3.jpg']
+​
+def process_image(path):
+    img = Image.open(path)
+​
+    # create paths to save files to
+    bw_path = "saved_images/bw_{}.jpg".format(path.stem)
+    rcz_path = "saved_images/rcz_{}.jpg".format(path.stem)
+​
+    print("Creating grayscale version of {} and saving to {}.".format(path, bw_path))
+    bw = img.convert("L")
+    # ... YOUR CODE FOR TASK 10 ...
+    bw.save(bw_path)
+    print("Creating rotated, cropped, and zoomed version of {} and saving to {}.".format(path, rcz_path))
+    rcz = img.rotate(45).crop((25, 25, 75, 75)).resize((100, 100))
+    # ... YOUR CODE FOR TASK 10 ...
+    rcz.save(rcz_path)
+# for loop over image paths
+for img_path in image_paths:
+    process_image(Path(img_path))
+    
+    
