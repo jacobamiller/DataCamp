@@ -1,0 +1,192 @@
+0 Course Description
+The Unix command line has survived and thrived for almost fifty years because it lets people do complex things with just a few keystrokes. Sometimes called "the universal glue of programming", it helps users combine existing programs in new ways, automate repetitive tasks, and run programs on clusters and clouds that may be halfway around the world. This course will introduce its key elements and show you how to use them efficiently.
+
+
+1 Manipulating files and directories
+This chapter is a brief introduction to the Unix shell. You'll learn why it is still in use after almost fifty years, how it compares to the graphical tools you may be more familiar with, how to move around in the shell, and how to create, modify, and delete files and folders.
+
+Icon exercise mc done
+How does the shell compare to a desktop interface?
+50 xp
+Icon exercise mc
+Where am I?
+50 xp
+Icon exercise mc
+How can I identify files and directories?
+50 xp
+Icon exercise interactive
+How else can I identify files and directories?
+30 xp
+Icon exercise interactive
+How can I move to another directory?
+30 xp
+Icon exercise mc
+How can I move up a directory?
+50 xp
+Icon exercise interactive
+How can I copy files?
+20 xp
+Icon exercise interactive
+How can I move a file?
+100 xp
+Icon exercise interactive
+How can I rename files?
+30 xp
+Icon exercise interactive
+How can I delete files?
+40 xp
+Icon exercise interactive
+How can I create and delete directories?
+40 xp
+Icon exercise interactive
+Wrapping up
+70 xp
+
+
+2 Manipulating data
+The commands you saw in the previous chapter let you move things around in the filesystem. This chapter will show you how to work with the data that's in those files. The tools we will look at are fairly simple, but are the model for everything that's more powerful.
+
+Icon exercise interactive
+How can I view a file's contents?
+100 xp
+Icon exercise interactive
+How can I view a file's contents piece by piece?
+100 xp
+Icon exercise mc
+How can I look at the start of a file?
+50 xp
+Icon exercise interactive
+How can I type less?
+20 xp
+Icon exercise interactive
+How can I control what commands do?
+100 xp
+Icon exercise interactive
+How can I list everything below a directory?
+100 xp
+Icon exercise interactive
+How can I get help for a command?
+20 xp
+Icon exercise mc
+How can I select columns from a file?
+50 xp
+Icon exercise mc
+What can't cut do?
+50 xp
+Icon exercise interactive
+How can I repeat commands?
+50 xp
+Icon exercise interactive
+How can I select lines containing specific values?
+60 xp
+Icon exercise mc
+Why isn't it always safe to treat data as text?
+50 xp
+
+
+3 Combining tools
+The real power of the Unix shell lies not in the individual commands, but in how easily they can be combined to do new things. This chapter will show you how to use this power to select the data you want, and introduce commands for sorting values and removing duplicates.
+
+Icon exercise interactive
+How can I store a command's output in a file?
+100 xp
+Icon exercise interactive
+How can I use a command's output as an input?
+20 xp
+Icon exercise interactive
+What's a better way to combine commands?
+100 xp
+Icon exercise interactive
+How can I combine many commands?
+100 xp
+Icon exercise interactive
+How can I count the records in a file?
+100 xp
+Icon exercise interactive
+How can I specify many files at once?
+100 xp
+Icon exercise mc
+What other wildcards can I use?
+50 xp
+Icon exercise interactive
+How can I sort lines of text?
+100 xp
+Icon exercise interactive
+How can I remove duplicate lines?
+100 xp
+Icon exercise mc
+How can I save the output of a pipe?
+50 xp
+Icon exercise interactive
+How can I stop a running program?
+100 xp
+Icon exercise interactive
+Wrapping up
+60 xp
+
+
+4 Batch processing
+Most shell commands will process many files at once. This chapter will show you how to make your own pipelines do that. Along the way, you will see how the shell uses variables to store information.
+
+Icon exercise mc
+How does the shell store information?
+50 xp
+Icon exercise interactive
+How can I print a variable's value?
+100 xp
+Icon exercise interactive
+How else does the shell store information?
+20 xp
+Icon exercise interactive
+How can I repeat a command many times?
+100 xp
+Icon exercise interactive
+How can I repeat a command once for each file?
+100 xp
+Icon exercise mc
+How can I record the names of a set of files?
+50 xp
+Icon exercise mc
+A variable's name versus its value
+50 xp
+Icon exercise interactive
+How can I run many commands in a single loop?
+100 xp
+Icon exercise mc
+Why shouldn't I use spaces in filenames?
+50 xp
+Icon exercise mc
+How can I do many things in a single loop?
+50 xp
+
+
+5 Creating new tools
+History lets you repeat things with just a few keystrokes, and pipes let you combine existing commands to create new ones. In this chapter, you will see how to go one step further and create new commands of your own.
+
+Icon exercise interactive
+How can I edit a file?
+100 xp
+Icon exercise interactive
+How can I record what I just did?
+30 xp
+Icon exercise interactive
+How can I save commands to re-run later?
+20 xp
+Icon exercise interactive
+How can I re-use pipes?
+30 xp
+Icon exercise interactive
+How can I pass filenames to scripts?
+20 xp
+Icon exercise mc
+How can I process a single argument?
+50 xp
+Icon exercise interactive
+How can one shell script do many things?
+90 xp
+Icon exercise interactive
+How can I write loops in a shell script?
+30 xp
+Icon exercise mc
+What happens when I don't provide filenames?
+50 xp
